@@ -1,0 +1,433 @@
+====================
+     11-08-2016
+====================
+
+
+   * device/samsung/klte/
+8314089 klte: Use source-built libpn547 NFC firmware blob
+5d080f2 klte: nfc: Update configs and build
+
+   * device/samsung/klte-common/
+1c64c85 Revert "klte: Enable blur"
+aee12a3 klte-common: Enable legacy mediaserver
+4149b0e klte-common: Add buildable libpn547_fw
+
+   * frameworks/av/
+0e9394b Merge branch 'av-aosp.lnx.2.0.r5-rel' of git://codeaurora.org/platform/frameworks/av into cm-14.1
+
+   * frameworks/base/
+9dd6045 Add back imports removed from last commit in order to fix build.
+8efb5d9 batteryservice: Remove remnants of CAF's HVDCP changes
+788b085 connectivity: Configure additional TCP parameters
+41bb123 Fix nav bar showing always on the left when rotated to 270 degrees.
+9065080 pm: Fix NPE
+eccb120 SystemServer: Do not start Atlas Service on lowram devices.
+b9a839c Fix long press volume buttons skip tracks
+38724d1 services: battery: Don't blink with an hvdcp charger
+50e6146 Clean up "Optional screenshot type" code in PhoneWindowManager
+efcff01 Fix race condition in setting notification panel height
+7f0c7b6 Makes the loading "spinner" animation smoother in non-holo apps
+de3e8a3 Fix left clock padding
+0e41293 Disable more debugging
+b7ea9a6 Reduce log verbosity: Don't spam logcat
+be8262f Turn off some debugs
+a70bc20 Screenshot delay [1/2]
+8939981 Refresh USB tile
+4c5aa51e Add back screenshot delay
+
+   * frameworks/opt/setupwizard/
+b9dc8b2 Fix setupwizard crashes for tablets
+
+   * frameworks/opt/telephony/
+ec18aba Add dummy SUB record in CDMA NV mode
+6b3b5b8 Send EVENT_NV_READY to GsmCdmaPhone
+1bcf4b7 tests: Update SubscriptionInfo parameters to match fwb
+7893415 Telephony: fix SMS NPE
+aa9bab9 Phone App crash: process com.android.phone has stopped.
+6e91f68 Single digit MMI codes cause CTS to fail
+9766216 GsmMmiCode: Fix USSD NPE
+2a16b66 For NV-based devices like CDMA only devices, ignore ICC Card status change EVENT.
+213e3cd Suppress error pop-ups for single digit dials.
+3eae650 MMS: Update apnProfileID for MMS only apn.
+a357ec0 telephony: Configure additional TCP parameters
+3800210 telephony: Fix NPE when switching data SIM
+
+   * hardware/intel/img/hwcomposer/
+09c4a9b intel: hwcomposer: csc mode is only supported on newer blobs
+e9b348b intel: hwcomposer: Use ASUS_ZENFONE2_LP_BLOBS instead
+158e0af hwc: merrifield_plus: Add legacy LP blob support
+bb212e0 Selectivly Revert "Switch away from the deprecated IMG Graphics HAL APIs."
+
+   * packages/apps/CMParts/
+6bfd759 Merge branch 'cm-14.1' of https://github.com/CyanogenMod/android_packages_apps_CMParts into bs7.1
+b62ecf7 CMParts: rotation: Clean up UI and code
+
+   * packages/apps/Dialer/
+1e5c3de Re-add call recording feature.
+c4ac6d5 Revert "nCallUI: Add support for call recording"
+425abd4 InCallUI: Fix background colour of tabs on DSDA phones
+c1e1098 Fix reveal animation for outgoing calls.
+
+   * packages/apps/OmniSwitch/
+5d2e7bf OmniSwitch: time for a fresh look
+
+   * packages/apps/Settings/
+a0e68ab WirelessSettings: Remove NFC category if there's no NFC adapter
+1d80686 Remove kerneladuitor from dashboard settings.  Kind of pointless.
+7509418 Settings: fix battery icon in dashboard
+fabfca3 Settings: cm-ify wireless settings screen
+3fea6b6 Fix searched item isn't highlighted
+1f08060 Settings: Fix Crash when switch user
+6934eeb Settings: fix the "force close" in Settings at monkey-test.
+785e0d3 Settings: Occurred "com.android.phone" force close 9 times at monkey test.
+607c54a Settings:  Fix settings force close in monkey test.
+5f75617 Settings: "Back" icon not work on Settings-Security-Encrypt phone
+6643e1b Settings: Make APN of CT can be edited and be saved.
+f657dd2 Settings: Fix settings force close in monkey test.
+db2d733 Settings: Fix settings force close in monkey test.
+90d4302d Settings: Fix settings force close in monkey test.
+1cf709b Settings: Fix AssertionError in monkey
+0077460 Settings: Fix SparseArray null pointer issue in monkey issues
+ee8fd7b Hide the accounts which added for data pack
+570a214 SAP: Enable 5Ghz AP band option only when a valid country code is received
+cedb551 Hide the accounts which added for data pack
+1f0f410 Settings: The APN cannot be edited after tapping right of APN
+dc20dee Make America build again.
+3c21880 Screenshot delay [2/2]
+91f3e83 Revert "Use same technology type for LTE/4G"
+
+   * packages/services/Telecomm/
+529106c Fix sporadic crashes with MSIM devices and inactive SIMs
+d37a99e Telecomm: Update icon to Material
+
+   * packages/services/Telephony/
+8e786fd Merge branch 'cm-14.1' of github.com:CyanogenMod/android_packages_services_Telephony into bs7.1
+eb055fa Telephony: Redirect to roaming SIM network setting(Dual SIM)
+80416fe EditPhoneNumberPreference: Prevent empty text from being set
+9022fda Switch back to Auto selection if Manual fail's
+2ae24ed PhoneApp Crash: Multiple times due to permission issue
+21bd850 MSIM: Show Enhanced 4G LTE mode option for IMS subscription
+ac96ab8 Revert "Single digit MMI codes invalid." Feijao: Single digit MMI codes are valid when in-call
+1608ed1 Apply correct theme color to USSD progress dialog.
+b027031 Fix MSIM voicemail notification icons.
+fcc98cb Single digit MMI codes invalid.
+36673a9 Fix CDMA vs. WCDMA typo in cs translations
+2d191b7 Fix removal of 'all accounts' preference.
+49433ec Order SIM accounts properly.
+245ca39 Telephony: Exit call features if our error is unrecoverable.
+91d68d8 Remove hard-coded CDMA roaming mode restrictions.
+e12b716 Change string "Cellular" to "Mobile"
+c867378 Fix multiple apn items issue
+
+   * system/sepolicy/
+2e053ed Merge branch 'cm-14.1' of github.com:CyanogenMod/android_system_sepolicy into bs7.1
+a35663a Add rules required for TARGET_HAS_LEGACY_CAMERA_HAL1
+
+   * vendor/beanstalk/
+aa17bdb remove prebuilt kerneladiutor.  Not a fan of forcing unnecessary packages on users.  Not sure why I've kept it this long.  Anyways, easily downloaded from play store if the user wants it.
+beec750 Merge branch 'cm-14.1' of github.com:CyanogenMod/android_vendor_cm into bs7.1
+143269c vendor: cm: Move fuseblk to system/sepolicy
+1bbf3e9 envsetup: block SDCLANG on Darwin for now
+3e169cb Merge branch 'cm-14.1' of github.com:CyanogenMod/android_vendor_cm into bs7.1
+
+   * vendor/cmsdk/
+a75c1b2 Merge branch 'cm-14.1' of github.com:CyanogenMod/cm_platform_sdk into bs7.1
+abe4122 cmhw: Fix boot handling
+
+   * vendor/samsung/
+9a02fb5 Merge pull request #879 from haggertk/cm-14.1-klte_bringup
+dbf363b klte*: Remove pn547 NFC firmware blobs
+
+====================
+     11-07-2016
+====================
+
+
+   * device/qcom/sepolicy/
+8259f14 Merge remote-tracking branch 'caf/LA.BR.1.2.9_rb1.8' into cm-14.1
+
+   * frameworks/av/
+dc61dbf libstagefright: Support for legacy camera/encoder buffers
+
+   * hardware/samsung/
+b215923 macloader: Add even more OUIs
+
+   * packages/apps/CMBugReport/
+4cf7aad bugreport: Fix permission restrictions
+
+   * packages/apps/CarrierConfig/
+0af4ed4 Resolve NZ roaming entry
+
+   * packages/apps/Contacts/
+bb83402 [1/2] Contacts: make shapes great again
+
+   * packages/apps/ContactsCommon/
+0da306c [2/2] ContactsCommon: make shapes great again
+
+   * vendor/cmsdk/
+f133161 cmhw: Fix boot handling
+
+====================
+     11-06-2016
+====================
+
+
+   * build/
+8d7c71a Merge branch 'cm-14.1' of github.com:CyanogenMod/android_build into bs7.1
+
+   * device/samsung/klte-common/
+936ea50 Revert "Revert "klte-common: enable sdcardfs""
+
+   * frameworks/base/
+2fff2a3 Use @hide for screenshot setting
+2cdc6b6 Optional screenshot type [1/2]
+5c86768 Don't crash if print spooler doesn't have location permission.
+828b537 Don't show quotation marks around Wifi network name in Settings.
+e68653e Support enforcing a minimum delay between notification sounds of an app.
+6eaa5c3 (Optionally) allow vibration during priority zen mode.
+21915d5 Revert "Mms: Fix no ringtone for MT SMS during the call."
+c36faf6 Add importance level to block lock screen notifications (fixed) (1/2)
+cf9a09a Revert "Proximity speaker [1/2]"
+0eae757 Revert "Dialer Lookup [1/2]"
+
+   * frameworks/opt/telephony/
+a164555 Telephony: handle 3rd party sms apps + 'always ask'
+
+   * packages/apps/Settings/
+182efad Optional screenshot type [2/2]
+b3f422c Show SIM name as data usage mobile network category title.
+19e7cf3 Integrate mobile network settings into SIM settings for MSIM.
+ef422dc Remove a few MSIM tab hosts.
+e3a92f5 Add setup UI for minimum delay between an app's notification sounds.
+de89d0b Allow selecting vibration mode during zen priority mode.
+0ea8bc6 Add importance level to block lock screen notifications (fixed) (2/2)
+
+   * packages/services/Telephony/
+8a4f571 Merge branch 'cm-14.1' of github.com:CyanogenMod/android_packages_services_Telephony into bs7.1
+
+   * system/sepolicy/
+52a4d3b system: sepolicy: Import fuseblk from vendor/cm
+df55f36 Merge branch 'cm-14.1' of github.com:CyanogenMod/android_system_sepolicy into bs7.1
+
+   * vendor/beanstalk/
+b0cecb7 Always create a kernel defconfig build artifact
+8ab9e00 Added contributors for vegetalte
+6ddd835 themes: allow system_server to relabel them dir
+8614943 Contributors: Add maintainers for BQ Aquaris M5 (piccolo)
+7f3e6df Contributors: Add maintainer for Alcatel Idol 3
+6aab884 Merge branch 'cm-14.1' of github.com:CyanogenMod/android_vendor_cm into bs7.1
+
+   * vendor/cmsdk/
+91b3848 Merge branch 'cm-14.1' of github.com:CyanogenMod/cm_platform_sdk into bs7.1
+
+   * vendor/samsung/
+b36bc4e Merge pull request #876 from zwliew/cm-14.1
+
+====================
+     11-05-2016
+====================
+
+
+   * device/samsung/klte-common/
+668eba3 klte-common: Add vsync phase offset
+
+   * frameworks/native/
+28ee195 libui: gralloc1 getphys implementation for samsung OMX
+
+   * frameworks/opt/net/wifi/
+8594d48 wifi: Set the mode at native layer
+
+   * kernel/samsung/klte/
+c754dcd klte: drivers: sensorhub: Kill all the kmsg spam
+
+   * packages/apps/AudioFX/
+db8cc15 AudioFX: Fix possible RuntimeException
+a01d9e0 AudioFX: Fix possible NPE
+
+   * packages/apps/Dialer/
+152af85 Dialer: Fix proximity on wake handling
+
+   * packages/apps/Settings/
+4efb9c7 Seekbars are just stylish, let's use them
+
+   * packages/apps/Snap/
+70edacf Snap: Fix possible RuntimeException (due to NPE)
+3da1aa3 Snap: Fix possible NPE
+72e249c CameraNext: dynamically generate available photo resolutions
+
+   * packages/apps/Trebuchet/
+7b7aab4 Trebuchet: Remove stats/tracking
+
+   * vendor/beanstalk/
+63984ef ambient: Remove from OSS builds
+1998914 vendor_cm: Vodafone TR: Fix mobile data on first boot
+26e669b cm: Autodetect SDCLANG in prebuilts/snapdragon-llvm
+082e0ec extract_utils: Add option to define the certificate for jars
+
+====================
+     11-04-2016
+====================
+
+
+   * android/
+8e7b6d6 Merge branch 'cm-14.1' of github.com:CyanogenMod/android into bs7.1
+128fe35 cm: Use CM fork of legacy apache-http library
+
+   * build/
+ea931d0 Kill some log spam
+
+   * device/qcom/common/
+efcb43b extractors: Add origin branches for graphics blobs
+
+   * device/samsung/klte-common/
+36a765b klte-common: Symlink NFC node for backwards compatibility
+be71702 Revert "klte-common: Use multithread decode for boot animation"
+
+   * external/jemalloc/
+f96d4f7 Allow devices to specify a default decay time
+
+   * frameworks/av/
+3ee0862 camera/media: Support for legacy camera HALv1
+1e7d2ad libstagefright: fix exynos4 camcorder
+
+   * frameworks/base/
+e328814 Add the user set network mode to the siminfo table
+6d7980e AudioService: allow volume control on analog dock
+1d95876 Add Motorola EMU audio dock jack sensing support
+9c9da15 Add Dock USB Audio Support for Samsung Car / Desk Docks
+5fdf58b bootanimation: enable multithread decode by default
+fe7ddda sysui: Use pixel navbar icons
+be9a9a6 Expose call creation time to link call recordings with recent call log (1/2)
+
+   * frameworks/opt/telephony/
+7dfa69b SubscriptionController: properly detect when MSIM has 1 SIM
+cef16bb telephony: Only set prompt enabled if available subscriptions > 1.
+fa9eead telephony: Workaround default sms sub id not being set.
+80b9aae telephony: Do not set default subscriptions on shutdown
+af77077 Set default subscriptions when single SIM is available
+
+   * hardware/qcom/audio-caf/msm8916/
+1416e5d Silence log spam.
+
+   * kernel/samsung/klte/
+e450db8 Revert "Bluetooth: SMP: Fix setting unknown auth_req bits"
+e6f525d Linux 3.4.17
+141c8de drm/i915: no lvds quirk for Zotac ZDBOX SD ID12/ID13
+eaf60df x86, mm: Use memblock memory loop instead of e820_RAM
+025a040 staging: comedi: amplc_pc236: fix invalid register access during detach
+95ee372 x86: efi: Turn off efi_enabled after setup on mixed fw/kernel
+83dd907 efi: Defer freeing boot services memory until after ACPI init
+60de23e x86, mm: Undo incorrect revert in arch/x86/mm/init.c
+7145846 x86, mm: Find_early_table_space based on ranges that are actually being mapped
+1cf584d Revert "ath9k_hw: Updated AR9003 tx gain table for 5GHz"
+bee70c5 cpufreq / powernow-k8: Remove usage of smp_processor_id() in preemptible code
+f8d106e bcma: fix unregistration of cores
+3b1b9be dmaengine: imx-dma: fix missing unlock on error in imxdma_xfer_desc()
+06c0d5f dmaengine: sirf: fix a typo in moving running dma_desc to active queue
+3f00376 dmaengine: sirf: fix a typo in dma_prep_interleaved
+c383f4a freezer: exec should clear PF_NOFREEZE along with PF_KTHREAD
+5dee032 Bluetooth: SMP: Fix setting unknown auth_req bits
+e62177c mac80211: check if key has TKIP type before updating IV
+faa4cc1 ARM: at91: at91sam9g10: fix SOC type detection
+0902dbe ARM: at91/i2c: change id to let i2c-gpio work
+e1b7246 ARM: at91/tc: fix typo in the DT document
+1834308 ARM: SAMSUNG: Add naming of s3c64xx-spi devices
+5f26842 vhost: fix mergeable bufs on BE hosts
+7f5e52b USB: mos7840: remove invalid disconnect handling
+38bb88b USB: mos7840: remove NULL-urb submission
+ecf4c52 USB: mos7840: fix port-device leak in error path
+fe91b1d USB: mos7840: fix urb leak at release
+2f7c956 USB: sierra: fix memory leak in probe error path
+aecbfa3 USB: sierra: fix memory leak in attach error path
+58a78e9 USB: serial: Fix memory leak in sierra_release()
+49458ea USB: opticon: fix memory leak in error path
+99f4c2e USB: opticon: fix DMA from stack
+37ca12f USB: whiteheat: fix memory leak in error path
+39b39b2 usb hub: send clear_tt_buffer_complete events when canceling TT clear work
+0171b5f usb-storage: add unusual_devs entry for Casio EX-N1 digital camera
+63772c4 ehci: Add yet-another Lucid nohandoff pci quirk
+2e3654e ehci: fix Lucid nohandoff pci quirk to be more generic with BIOS versions
+261d4f4 Drivers: hv: Cleanup error handling in vmbus_open()
+3f72b69 Staging: android: binder: Allow using highmem for binder buffers
+e17d60a sysfs: sysfs_pathname/sysfs_add_one: Use strlcat() instead of strcat()
+74b8c25 xhci: Fix potential NULL ptr deref in command cancellation.
+739c34a SUNRPC: Prevent races in xs_abort_connection()
+cae6645 Revert "SUNRPC: Ensure we close the socket on EPIPE errors too..."
+675a597 SUNRPC: Clear the connect flag when socket state is TCP_CLOSE_WAIT
+760ee2b SUNRPC: Get rid of the xs_error_report socket callback
+1578298 mm: fix XFS oops due to dirty pages without buffers on s390
+7e26a83 x86, mm: Trim memory in memblock to be page aligned
+99f4526 ARM: 7559/1: smp: switch away from the idmap before updating init_mm.mm_count
+204738c drivers/rtc/rtc-imxdi.c: add missing spin lock initialization
+861e2aa fs/compat_ioctl.c: VIDEO_SET_SPU_PALETTE missing error check
+7f417a1 gen_init_cpio: avoid stack overflow when expanding
+c74d1f2 ALSA: hda - add dock support for Thinkpad T430
+88deac5 drm/radeon: add error output if VM CS fails on cayman
+966dd3b drm/radeon: add some new SI PCI ids
+9897aec Linux 3.4.16
+fce8962 mtd: nand: allow NAND_NO_SUBPAGE_WRITE to be set from driver
+22f0739 sparc64: Be less verbose during vmemmap population.
+1d6aa3e sparc64: do not clobber personality flags in sys_sparc64_personality()
+77ae6a4 sparc64: Fix bit twiddling in sparc_pmu_enable_event().
+504c5f7 sparc64: Like x86 we should check current->mm during perf backtrace generation.
+5a720da sparc64: fix ptrace interaction with force_successful_syscall_return()
+668dc57 ipv6: addrconf: fix /proc/net/if_inet6
+702562f tcp: resets are misrouted
+255fd08 RDS: fix rds-ping spinlock recursion
+b445eed vlan: don't deliver frames for unknown vlans to protocols
+52b6a54 skge: Add DMA mask quirk for Marvell 88E8001 on ASUS P5NSLI motherboard
+1771348 net: Fix skb_under_panic oops in neigh_resolve_output
+d604eb9 infiniband: pass rdma_cm module to netlink_dump_start
+b8ddcb6 netlink: add reference of module in netlink_dump_start
+8dbdd02 media: au0828: fix case where STREAMOFF being called on stopped stream causes BUG()
+c80260b amd64_edac:__amd64_set_scrub_rate(): avoid overindexing scrubrates[]
+1813828 iommu/tegra: smmu: Fix deadly typo
+9fe33a0 pinctrl: tegra: set low power mode bank width to 2
+07fbdf3 pinctrl: tegra: correct bank for pingroup and drv pingroup
+b2063f7 Revert "cgroup: Drop task_lock(parent) on cgroup_fork()"
+c2c3eab Revert "cgroup: Remove task_lock() from cgroup_post_fork()"
+359ac5b cgroup: notify_on_release may not be triggered in some cases
+909b037 USB: option: add more ZTE devices
+7064dc2e USB: option: blacklist net interface on ZTE devices
+fe350be usb: host: xhci: New system added for Compliance Mode Patch on SN65LVPE502CP
+d96183d usb: acm: fix the computation of the number of data bits
+55b58ce USB: cdc-acm: fix pipe type of write endpoint
+e0f78a7 xen/x86: don't corrupt %eip when returning from a signal handler
+576384f x86: Exclude E820_RESERVED regions and memory holes above 4 GB from direct mapping.
+d357276 pcmcia: sharpsl: don't discard sharpsl_pcmcia_ops
+3b8d161 SUNRPC: Fix a UDP transport regression
+be0a225 SUNRPC: Prevent kernel stack corruption on long values of flush
+a94c4bf8 s390: fix linker script for 31 bit builds
+5342b67 oprofile, x86: Fix wrapping bug in op_x86_get_ctrl()
+1e0fb84 NLM: nlm_lookup_file() may return NLMv4-specific error codes
+3d1fabd arch/tile: avoid generating .eh_frame information in modules
+b4fd334 nohz: Fix idle ticks in cpu summary line of /proc/stat
+d4d57f4 ext4: Avoid underflow in ext4_trim_fs()
+d59ed42 ext4: race-condition protection for ext4_convert_unwritten_extents_endio
+cee3915 klte: config: Roll back to STACKPROTECTOR_REGULAR
+
+   * packages/apps/CMFileManager/
+5d00161 Properly upgrade DB.
+
+   * packages/apps/DeskClock/
+6846bad Fix copy'n'paste mistake in database creation.
+
+   * packages/apps/Dialer/
+f5c0256 Fix AppBarLayout elevation handling.
+e977cac Handle DB upgrade from CM13.
+
+   * packages/apps/Settings/
+3af75e5 Kill marquee display of app version/package name in app details.
+
+   * packages/inputmethods/LatinIME/
+231c497 Fix send button not being centered for non-standard densities.
+
+   * packages/providers/TelephonyProvider/
+6b8cecc telephony: Fix initial database creation
+
+   * packages/services/Telephony/
+1a1b3cd Allow MobileNetworkSettings to be invoked for selected SIM.
+
+   * system/bt/
+a791538 Fix AG API result code to internal result code mapping.
+
