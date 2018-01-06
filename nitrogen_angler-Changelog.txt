@@ -1,0 +1,236 @@
+====================
+     01-06-2018
+====================
+
+
+   * device/huawei/angler/
+4c01bcc angler: Don't use BFQ as default scheduler.
+23e7bd3 angler: Update fingerprint to OPM3.171019.013
+
+   * device/xiaomi/kenzo/
+4650e43 Update sk translation
+6196bb0 gps: fix build again
+
+   * frameworks/base/
+d0ce387 Update cs and sk translation
+
+   * packages/apps/NitrogenSettings/
+ab09ba4 NitrogenSettings：Update zh_rCN
+7a9f643 Update cs and sk translation
+
+   * packages/apps/Settings/
+acb6296 Settings: Add nitrogen_strings.xml zh_rCN
+e0d33db Update cs and sk translation
+3b0cad1 Bluetooth: Force black text when editing device name
+
+   * system/nfc/
+65954d4 bcm2079x: Add checks to prevent NULL pointer deference in gki_init_free_queue()
+b6d1d4f bcm2079x: Replace pthread_exit with return to avoid memory leak
+4ef64ed bcm2079x: [DNM] Hardcode nci_ctrl_size to Nougat value
+9da47cf bcm2079x: fix crash in userial_close_thread()
+c7ea634 bcm2079x: fix chip id format strings
+
+====================
+     01-05-2018
+====================
+
+
+   * bionic/
+76c6d0f Merge tag 'android-8.1.0_r7' into o2
+
+   * bootable/recovery/
+753735d Merge tag 'android-8.1.0_r7' into o2
+
+   * build/make/
+0c2059a target: Build black theme
+0629582 target: overlays: Refactor sysui overlay to system [2/2]
+5720efe core: Build Settings Dark UI overlay
+bd1681c Merge tag 'android-8.1.0_r7' into o2
+c19c46a [1/2] build: add OTA script do delete package cache
+
+   * build/soong/
+b82cc1a Merge tag 'android-8.1.0_r7' into o2
+
+   * device/xiaomi/kenzo/
+c6aa2a3 rootdir: rework rmt_storage run
+
+   * frameworks/av/
+3f5c813 audio: hold effect mutex when releasing effect engine
+fd98f4f audiopolicy: fix unexpected output selection for direct pcm usecase
+e612717 audiopolicy: fix wrong volume db value for voice call stream
+c6635e7 audioflinger: fix for playback paused during track transition
+dfe6b15 audio: Update anchor time for offload playback post resume
+dd2bf2a audio flinger: Fix native crash during underruns for patch track
+f42f2d8 Merge tag 'android-8.1.0_r7' into o2
+
+   * frameworks/base/
+f87b097 ColorOM: Support black theme
+6eecc12 DarkMode: add default attributes for settings
+50adc3f Darkmode: Don't override textColorPrimaryInverse
+235627b base: add support for dark overlays
+4091a81 Merge tag 'android-8.1.0_r7' into o2
+
+   * frameworks/native/
+a667de3 Merge tag 'android-8.1.0_r7' into o2
+
+   * frameworks/opt/telephony/
+8433c32 Merge tag 'android-8.1.0_r7' into o2
+
+   * hardware/interfaces/
+8c2a540 Merge tag 'android-8.1.0_r7' into o2
+
+   * hardware/qcom/audio/
+86eb06a Merge tag 'android-8.1.0_r7' into o2
+
+   * hardware/qcom/display/
+774b827 Merge tag 'android-8.1.0_r7' into o2
+
+   * hardware/qcom/gps/
+a31ae2c Merge tag 'android-8.1.0_r7' into o2
+
+   * hardware/qcom/media/
+fd93494 Merge tag 'android-8.1.0_r7' into o2
+
+   * hardware/ril/
+8b97203 Merge tag 'android-8.1.0_r7' into o2
+
+   * packages/apps/DeskClock/
+8feaf4b Merge tag 'android-8.1.0_r7' into o2
+
+   * packages/apps/Messaging/
+a88648d Merge tag 'android-8.1.0_r7' into o2
+
+   * packages/apps/NitrogenSettings/
+439e200 Fix dialog colors for dark and black themes
+caa9fcb Revert "[2/2] configure SystemUI theme"
+e00d5cc Clean translations and fix RU
+
+   * packages/apps/PackageInstaller/
+76df283 Merge tag 'android-8.1.0_r7' into o2
+
+   * packages/apps/Settings/
+57a54e5 ColorOM: Support black theme
+7af27a2 Settings: Expose suggestions background color
+8aaa616 Settings: Introduce Color Manager (ColorOM)
+569a119 ThemePreference: Disable inconsistent null check for availibility
+6aae486 ThemePreferenceController: Remove generic dark overlay from list
+f2843f1 Merge tag 'android-8.1.0_r7' into o2
+
+   * packages/inputmethods/LatinIME/
+db139d1 Merge tag 'android-8.1.0_r7' into o2
+
+   * packages/services/Telecomm/
+98e4e3f Merge tag 'android-8.1.0_r7' into o2
+
+   * packages/services/Telephony/
+814724d Merge tag 'android-8.1.0_r7' into o2
+
+   * system/bt/
+0f3c36e Merge tag 'android-8.1.0_r7' into o2
+
+   * system/core/
+569ffde Merge tag 'android-8.1.0_r7' into o2
+
+   * system/extras/
+66d3592 Merge tag 'android-8.1.0_r7' into o2
+
+   * system/hwservicemanager/
+315df2b Merge tag 'android-8.1.0_r7' into o2
+
+   * system/media/
+c28abae Merge tag 'android-8.1.0_r7' into o2
+
+   * system/nfc/
+9301948 Merge tag 'android-8.1.0_r7' into o2
+
+   * system/sepolicy/
+17294e2 Merge tag 'android-8.1.0_r7' into o2
+
+   * system/vold/
+6c1cb7b keymaster: Add support for upgrade_key for FDE
+9374469 Merge tag 'android-8.1.0_r7' into o2
+
+   * vendor/nitrogen/
+986bb0c add support for building custom themes
+f5243a3 [2/2] omni: add OTA script do delete package cache
+
+====================
+     01-04-2018
+====================
+
+
+   * device/huawei/angler/
+70faff4 fix
+85324cb updates
+98725c3 fix
+3a433f2 fix
+
+   * kernel/huawei/angler/
+a242513 angler: Update defconfig after Jan '18 Sec Update merge
+2c77941 Merge branch 'android-msm-angler-3.10-oreo-m3' of https://android.googlesource.com/kernel/msm into o8.1
+
+====================
+     01-03-2018
+====================
+
+
+====================
+     01-02-2018
+====================
+
+
+====================
+     01-01-2018
+====================
+
+
+   * device/oneplus/oneplus3/
+af63f99 init.qcom.usb: fix rndis after removing init.qcom.usb.sh
+100f901 init.qcom.power: block some wakelocks
+
+   * kernel/oneplus/msm8996/
+848b414 wakeup: add some wakelocks from cheeseburger
+
+====================
+     12-31-2017
+====================
+
+
+====================
+     12-30-2017
+====================
+
+
+   * device/huawei/angler/
+4716b43 nitrogen
+
+   * hardware/qcom/wlan-caf/
+200003b Include what you use.
+c391d09 Building libwifi-hal-qcom with BOARD_VNDK_VERSION
+1c8ac47 Mark lib_driver_cmd_qcwcn as vendor module
+97b6c06 Delete cld80211-lib static variant.
+
+====================
+     12-29-2017
+====================
+
+
+   * device/oneplus/oneplus3/
+0260b1c init.qcom.power: Tweak interactive governor by By Sasha (aka Inkyz \ Sycreed) Link - https://4pda.ru/forum/index.php?showtopic=752764&st=9280#entry68532585
+
+====================
+     12-28-2017
+====================
+
+
+   * frameworks/base/
+383340b Brightness on footer: improve vpn footer warnings layout
+5d30024 Battery tile: fix label when charging
+905e6f8 [1/2] base: poor man battery style tweaks
+d979411 Allow to disable qs footer warnings [1/2]
+
+   * kernel/xiaomi/kenzo/
+584f7c9 proc: Remove additional SafetyNet flags from /proc/cmdline
+4c7b50b proc: Remove verifiedbootstate flag from /proc/cmdline
+d41b936 Revert "SafetyNet bypass: Show androidboot.verifiedbootstate=green"
+
