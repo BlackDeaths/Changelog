@@ -1,0 +1,89 @@
+====================
+     01-18-2018
+====================
+
+   * device/huawei/angler/
+fa91b61  Revert "overlay: frameworks: allow gms to access persistent data partition"  [BlackDeath]
+
+====================
+     01-17-2018
+====================
+
+   * manifest/
+200b2b2  Track new OTA app  [Shubham Singh]
+   * packages/apps/Snap/
+95b3db5  Revert "TEMP:Revert "Camera: Powerkey shutter (2/2)""  [Dan Cartier]
+   * packages/apps/Updates/
+e134cda  Update README  [Shubham Singh]
+fc822b2  Remove from launcher  [Shubham Singh]
+f7f9665  Show a toast before exit on unofficial builds  [Shubham Singh]
+f8c301d  Allow downloads over roaming network  [Shubham Singh]
+198be5a  Remove expandablelayout from gradle deps as we already have it locally for inline building  [Shubham Singh]
+d49cc0a  Refactor for aex  * Update package name  * Update props  * Update API url  [Shubham Singh]
+f1682e3  Update README.md  [jhenrique09]
+c009426  Automatic translation import  [jhenrique09]
+7826582  UpdaterActivity: Don't dismiss dialog when user touch outside  [jhenrique09]
+062cfa3  Make changelog theme-able on UpdatePreference too  [jhenrique09]
+cadc30b  UpdaterActivity: Refactor UpdatePreference  [jhenrique09]
+3ea1f63  Don't write MD5 hash to an file  [jhenrique09]
+   * vendor/aosp/
+c707c14  Build new OTA app  [Shubham Singh]
+
+====================
+     01-16-2018
+====================
+
+   * packages/apps/Updates/
+21cf7d8  Fix few strings  [jhenrique09]
+68ea5d6  Add developer url param  [jhenrique09]
+
+====================
+     01-15-2018
+====================
+
+   * frameworks/base/
+767ec86  Set a proper transparency of 60% to Stock NavBar icons  [GitHub]
+   * packages/apps/DUI/
+1babec0  Set a proper transparency of 60% to SmartBar/Fling icons  [Jesus R]
+   * packages/apps/Snap/
+94b99f6  Snap: check tags before using them  [Dan Cartier]
+e8aa3b5  Snap: Rip out hdr-need-1x option  [Dan Cartier]
+   * packages/apps/Updates/
+98c0b83  Update API url  [jhenrique09]
+5f70837  Show file path on install dialog  [jhenrique09]
+1374343  Local Changelog: Fix text selection with dot  [jhenrique09]
+fff4180  Local Changelog: clean and make themeable  [jhenrique09]
+e745f80  Local Changelog: prettify  [jhenrique09]
+5f68f33  Implement local changelog  [jhenrique09]
+8d8c216  Implement advanced install options  [jhenrique09]
+753740f  Changes for inline building  [jhenrique09]
+c791c64  Import from Android Studio  [jhenrique09]
+
+====================
+     01-14-2018
+====================
+
+   * device/huawei/angler/
+c680f5a  angler: update blobs list for android-8.1.0_r1  [BlackDeath]
+9748a4d  angler: add lineage blobs files  [BlackDeath]
+25fd198  Revert "TWRP support"  [BlackDeath]
+ad51163  Angler : Override device has no menu key  [BlackDeath]
+3030ee0  TWRP support  [BlackDeath]
+   * kernel/huawei/angler/
+b290115  futex: Ensure get_futex_key_refs() always implies a barrier  [Pranav Vashi]
+c00a0c7  UPSTREAM: ALSA: usb-audio: Kill stray URB at exiting  [Pranav Vashi]
+ecd8fd7  UPSTREAM: ALSA: usb-audio: Check out-of-bounds access by corrupted buffer descriptor  [Pranav Vashi]
+707a37e  ANDROID: sdcardfs: Fix missing break on default_normal  [Pranav Vashi]
+32dd453  ANDROID: sdcardfs: Add default_normal option  [Pranav Vashi]
+606b780  ANDROID: sdcardfs: notify lower file of opens  [Pranav Vashi]
+062de89  ANDROID: sdcardfs: override credential for ioctl to lower fs  [Pranav Vashi]
+04d78d4  ANDROID: sdcardfs: use mount_nodev and fix a issue in sdcardfs_kill_sb  [Pranav Vashi]
+e8686c0  ANDROID: sdcardfs: remove dead function open_flags_to_access_mode()  [Pranav Vashi]
+bd1209d  ANDROID: sdcardfs: d_splice_alias can return error values  [Pranav Vashi]
+8c3b917  ANDROID: sdcardfs: Add linux/kref.h include  [Pranav Vashi]
+   * packages/apps/Updates/
+fbd106c  Disable proguard and dexpreopt  [jhenrique09]
+379414b  Update commons-io library  [jhenrique09]
+5bb287d  Cleanup more things  [jhenrique09]
+17ffd8d  Cleanup translations  [jhenrique09]
+
