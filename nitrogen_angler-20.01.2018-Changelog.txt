@@ -1,0 +1,561 @@
+====================
+     01-20-2018
+====================
+
+
+   * device/huawei/angler/
+365ebff kenzo: Update to WiFi 1.1
+de1acc9 Enable Always On Display settings
+6721630 angler: squash of add Snap commits [10]
+a56fd24 add nitrogen
+c12f669 add nitrogen vendor
+711f408 update
+72f6ed8 Add files via upload
+1d07606 Merge pull request #1 from ezio84/o2
+
+   * device/xiaomi/kenzo/
+4bf38d2 XiaomiParts: fix AlertDialog color
+106ccc5 device: add telephony-ext to BOOT_JARS
+
+   * packages/apps/Settings/
+cc8b21b Settings: stop odexing
+8d5861d SimSettings: Correctly disabling sim switch without sim card
+6e0c29b Clean up SIM enable toggle implementation
+e7781e7 Settings: port manual provisiong support commit 7adcacb2b7b586f2cc1fe26db769e63553a89494 Author: Ricardo Cerqueira <ricardo@cyngn.com> Date:   Thu Jul 28 12:29:40 2016 +0100
+
+   * packages/apps/Snap/
+022567f TEMP:Revert "Camera: Powerkey shutter (2/2)"
+
+   * packages/services/Telephony/
+47b8797 Fix multiple apn items issue
+
+   * vendor/codeaurora/telephony/
+896d914 Revert "IMS-VT: Low battery handling for Video calls"
+
+   * vendor/oneplus/
+4676292 op3(t): Use qti telephony from Tissot (Xiaomi Mi A1)
+
+====================
+     01-19-2018
+====================
+
+
+   * device/oneplus/oneplus3/
+cfe18ea op3(t): add persist.radio.aosp_usr_pref_sel for Tissot telephony
+
+   * frameworks/base/
+b933720 NitrogenUtils: Add isAppInstalled
+c4d1687 Interface to check for deferred messages
+2a64aa4 IMS: Support for possible call session handover
+85c8ac2 uce: Updating UCE API to accept ICC-ID.
+0ab0be8 TelephonyManager uses default voice sub instead of Default data sub.
+e9ca225 Add config to disable CDMA call fwd/waiting
+363f8f5 Emergency call redial implementation
+6e62d13 Telecom: Reset the duration after the CDMA call is accepted
+92580f4 BT: Send info if call is CS type from telecomm service to BT apps.
+d653699 IMS: Make modifications to incorporate IMS related call types as well
+0c2e62b SMS: Parsing of CDMA MMS notification carried by SMS
+8aaf4cf Add support for getAtr api
+3d3a251 Default NW mode property for each slot
+0ac3cd5 IMS: Add flag to control reset UT capability
+52f86e3 IMS-VT: Add config to control holding a video call
+0c3910c Use proper coded alphabet when a contact is written into EF_ADN of USIM.
+f3cefd9 Add support for send Message with messaging options
+484eb8e Telephony: Get SIM card capacity count of SMS
+52db5a2 IMS: Conference URI support.
+5054672 IMS: Add support for STK CC feature
+a6cb2bc Telephony: Add DisconnectCause values for clear code
+548cc83 IMS: Add UT interface to query CF setting for service class.
+444b0ce IMS: Add new APIs for call barring operations
+aac950b base: fix SEEMP contributions for 8.1
+99e3a70 SEEMP: rename optional app verifier intent name
+3189a9b SEEMP: app verification fails when required verifier not present
+1dde6c7 SEEMP: optional verifier works without default verifier
+1c3b03f SEEMP: change broadcast intent for app verification
+e0cb2a4 SEEMP: framework instrumentation and AppProtect features
+
+   * frameworks/opt/net/ims/
+5ae6301 Merge tag 'LA.UM.6.4.r1-05700-8x98.0' into o2
+
+   * frameworks/opt/telephony/
+5544f77 Default Data connection with Single SIM
+ea06f37 telephony: dont scare AOSP people
+8134916 Fix loading of older blobs
+1e6f839 Merge tag 'LA.UM.6.4.r1-05700-8x98.0' into o2
+
+   * packages/apps/PhoneCommon/
+a49b8ad Merge tag 'LA.UM.6.4.r1-05700-8x98.0' into HEAD
+
+   * packages/services/Telecomm/
+32c397b Telecom: Break qti-telephony-framework dependencyi II
+788c049 Merge tag 'LA.UM.6.4.r1-05700-8x98.0' into o2
+
+   * packages/services/Telephony/
+988b003 Telephony: use SettingsLib styles
+a7952c6 Telephony: add permission to change wifi hot spot settings
+08e9a96 Telephony: unify calling account display and selection
+cd65dc2 Telephony: check before removing preference
+783b7fb Telephony: Break qti-telephony-framework dependency
+1cbbea3 TeleService: well well well - if you want to remove a pref you should set the key
+76e94ca CallFeatureSettings: Only show video quality if QTI package installed
+adccbb2 Revert "Add support to launch call barring"
+547c478 Revert "XDivert changes for MSIM"
+3d5d2cf Telephony: add some org.codeaurora.* to protected broadcasts
+4e511bb Merge tag 'LA.UM.6.4.r1-05700-8x98.0' into o2
+
+   * vendor/nitrogen/
+375792b Push pixel theme overlay This quickly allows us to create more themes based on the pixel theme found inside the Oreo factory image.
+
+   * vendor/oneplus/
+8f3e743 op3: add missed librcc.so ims_media_jni: Error loading library lib-imsvt.so: dlopen failed: library "librcc.so" not found
+869e20a OP3: Update blobs to OnePlus Open Beta 21
+
+====================
+     01-18-2018
+====================
+
+
+   * device/oneplus/oneplus3/
+d78a3cc Oneplus3Parts: fix AlertDialog color
+21a5e33 AoD: Enable burn-in protection
+
+   * frameworks/base/
+8ae0601 SysTuner: Replace parent style
+7d5b37b KeyguardHostView: Dismiss keyguard automatically when face is recognized
+f2d1ac2 SystemUI: SIM PIN locked view can't pop up after removed one SIM
+
+   * kernel/oneplus/msm8996/
+240d444 Merge remote-tracking branch 'linux/linux-3.18.y' into o2 3.18.92
+a5d35de Linux 3.18.92
+55492dc e1000e: Fix e1000_check_for_copper_link_ich8lan return value.
+7c07fbc uas: ignore UAS for Norelsys NS1068(X) chips
+e1ed1d1 Bluetooth: Prevent stack info leak from the EFS element.
+6dc42f8 staging: android: ashmem: fix a race condition in ASHMEM_SET_SIZE ioctl
+f54053f usbip: remove kernel addresses from usb device and urb debug msgs
+0edffa0 USB: fix usbmon BUG trigger
+a52b2f8 usb: misc: usb3503: make sure reset is low for at least 100us
+8b3193a USB: serial: cp210x: add new device ID ELV ALC 8xxx
+7c56a67 USB: serial: cp210x: add IDs for LifeScan OneTouch Verio IQ
+e27472a Revert "can: kvaser_usb: free buf in error paths"
+7f244e5 target: Avoid early CMD_T_PRE_EXECUTE failures during ABORT_TASK
+879eea2 iscsi-target: Make TASK_REASSIGN use proper se_cmd->cmd_kref
+44cd2c5 x86/microcode/intel: Extend BDW late-loading with a revision check
+4cefa6f crypto: algapi - fix NULL dereference in crypto_remove_spawns()
+540eac0 net: stmmac: enable EEE in MII, GMII or RGMII only
+7247c48 sh_eth: fix SH7757 GEther initialization
+7469b22 sh_eth: fix TSU resource handling
+3396f2b RDS: null pointer dereference in rds_atomic_free_op
+a7b25c9 RDS: Heap OOB write in rds_message_alloc_sgs()
+0982b64e7 8021q: fix a memory leak for VLAN 0 device
+a740408 x86/acpi: Reduce code duplication in mp_override_legacy_irq()
+48c2709 ALSA: aloop: Fix racy hw constraints adjustment
+1720189 ALSA: aloop: Fix inconsistent format due to incomplete rule
+5517ed3 ALSA: aloop: Release cable upon open error path
+cb8ee49 ALSA: pcm: Allow aborting mutex lock at OSS read/write loops
+220d723 ALSA: pcm: Abort properly at pending signal in OSS read/write loops
+fbff9dd ALSA: pcm: Add missing error checks in OSS emulation plugin builder
+f8c035f ALSA: pcm: Remove incorrect snd_BUG_ON() usages
+ae62a91 x86/acpi: Handle SCI interrupts above legacy space gracefully
+17e27ff kvm: vmx: Scrub hardware GPRs at VM-exit
+2f9cf5c perf/core: Fix concurrent sys_perf_event_open() vs. 'move_group' race
+c3b291e MIPS: Also verify sizeof `elf_fpreg_t' with PTRACE_SETREGSET
+1eaff73 MIPS: Disallow outsized PTRACE_SETREGSET NT_PRFPREG regset accesses
+0cc4b3b MIPS: Fix an FCSR access API regression with NT_PRFPREG and MSA
+fd8a39f MIPS: Consistently handle buffer counter with PTRACE_SETREGSET
+80aaed8 MIPS: Guard against any partial write attempt with PTRACE_SETREGSET
+0313868 MIPS: Factor out NT_PRFPREG regset access helpers
+a314ae1 IB/srpt: Disable RDMA access by the initiator
+ce9c95f can: gs_usb: fix return value of the "set_bittiming" callback
+2431a63 Input: elantech - add new icbody type 15
+946519d kernel/signal.c: remove the no longer needed SIGNAL_UNKILLABLE check in complete_signal()
+64c6493 kernel/signal.c: protect the SIGNAL_UNKILLABLE tasks from !sig_kernel_only() signals
+8deeda7 kernel/signal.c: protect the traced SIGNAL_UNKILLABLE tasks from SIGKILL
+8881d834 fscache: Fix the default for fscache_maybe_release_page()
+381d85f crypto: n2 - cure use after free
+7bf407c kernel/acct.c: fix the acct->needcheck check in check_free_space()
+
+   * kernel/xiaomi/kenzo/
+96f8cf6 Squashed dt2w with proximity check
+
+   * packages/apps/DUI/
+e4c72f8 Implement darkintensity also for smartbar button ripple animation
+
+   * packages/apps/OmniJaws/
+0cfaac6 OmniJaws: looks like Settings
+
+   * packages/apps/Snap/
+95b3db5 Revert "TEMP:Revert "Camera: Powerkey shutter (2/2)""
+
+   * system/qcom/
+a0d762d Merge tag 'LA.UM.6.4.r1-05900-8x98.0' of https://source.codeaurora.org/quic/la/platform/system/qcom into HEAD
+
+====================
+     01-17-2018
+====================
+
+
+   * device/oneplus/oneplus3/
+af5833f CarrierConfig: merge back all volte lines from prev version
+
+   * packages/apps/NitrogenSettings/
+cc0ba51 LockscreenWeather: fix NPE without OmniJaws
+
+   * packages/apps/OmniJaws/
+d0d4859 OpenWeatherMap: Add user API key
+0f56c15 Revert "WeatherProviders: Remove OpenWeatherMap."
+3b6a5e6 Disable dexpreopt
+
+====================
+     01-16-2018
+====================
+
+
+   * frameworks/base/
+d286f529 HU: Create nitrogen_strings.xml
+
+   * kernel/oneplus/msm8996/
+b9e55e6 defconfig: Enable kcal
+
+   * packages/apps/DUI/
+de40193 HU: Update strings.xml
+
+   * packages/apps/Dialer/
+514ed5b HU: Create nitrogen-strings.xml
+
+   * packages/apps/OmniJaws/
+8bb50a9 OmniJaws: remove hard dep to network location
+9b23104 HU: Update strings.xml
+
+   * packages/apps/Settings/
+63389e9 HU: Create nitrogen_settings.xml
+
+====================
+     01-15-2018
+====================
+
+
+   * frameworks/base/
+5584f31 App screenshot filename: keep compatibility with Cyrillic
+7051bc1 Notification light: update from abc
+1191be0 MTP_DIRTY_HACK: simplify and adapted for USB Tether tile
+85dc8c0 Add USB Tether QS Tile
+99e2695 Alarm Blocker: Shut up CONTEXT_MANAGER_ALARM_WAKEUP
+2f1de6c base: Remove interactive check on keyhandler camera event
+4939be4 Revert "fwcore: Enable power save config of system apps"
+
+   * kernel/huawei/angler/
+b290115 futex: Ensure get_futex_key_refs() always implies a barrier
+c00a0c7 UPSTREAM: ALSA: usb-audio: Kill stray URB at exiting
+ecd8fd7 UPSTREAM: ALSA: usb-audio: Check out-of-bounds access by corrupted buffer descriptor
+707a37e ANDROID: sdcardfs: Fix missing break on default_normal
+32dd453 ANDROID: sdcardfs: Add default_normal option
+606b780 ANDROID: sdcardfs: notify lower file of opens
+062de89 ANDROID: sdcardfs: override credential for ioctl to lower fs
+04d78d4 ANDROID: sdcardfs: use mount_nodev and fix a issue in sdcardfs_kill_sb
+e8686c0 ANDROID: sdcardfs: remove dead function open_flags_to_access_mode()
+bd1209d ANDROID: sdcardfs: d_splice_alias can return error values
+8c3b917 ANDROID: sdcardfs: Add linux/kref.h include
+
+   * packages/apps/Settings/
+e4f7d1a Notification light: update from abc
+
+   * packages/apps/Snap/
+94b99f6 Snap: check tags before using them
+e8aa3b5 Snap: Rip out hdr-need-1x option
+
+====================
+     01-14-2018
+====================
+
+
+   * device/oneplus/oneplus3/
+9a656e6 update CarrierConfig xml from op3 5.0.1
+cc13371 init.qcom.power: Update profile by Sasha (Inkyz \ SyCreed)
+
+   * packages/apps/Settings/
+51a8286 Revert "Enable power save config of system apps [2/2]"
+
+====================
+     01-13-2018
+====================
+
+
+   * packages/apps/NitrogenSettings/
+720d117 Update cs and sk translation
+
+   * packages/apps/OmniJaws/
+85bb43f WeatherProviders: Remove OpenWeatherMap. This service wants money
+
+   * packages/apps/Settings/
+74c512d Update cs and sk translation
+
+   * system/core/
+20e5722 healthd: Add support for HVDCP_3 chargers
+5bbc922 Shut up camera and wcnss debug output
+
+   * vendor/qcom/opensource/fm/
+003d8d9 qc-fm: fmapp2: Add adaptive icons
+
+====================
+     01-12-2018
+====================
+
+
+   * device/qcom/sepolicy/
+95388fe Fix missed files
+
+   * frameworks/av/
+c3c50b4 libstagefright: use 64-bit usage for native_window_set_usage
+
+   * frameworks/base/
+50ba239 Prevent deadlock when going out of idle state
+2a9e625 Bluetooth: Avoiding NULL pointer dereferences
+5ed5ef7 BT:Crash occured due to null pointer exception.
+
+   * kernel/oneplus/msm8996/
+15d4611 msm: mdss: KCAL: disable igc update
+c718d42 msm: mdss: KCAL: Send a pp display commit when changes are made
+da4b245 mdss mdp: kcal for mdss_mdp_v1_7
+55368d66 f2fs: deny accessing encryption policy if encryption is off
+1e736dc f2fs: inject fault in inc_valid_node_count
+7919212 f2fs: expose quota information in debugfs
+a782ac5 f2fs: separate nat entry mem alloc from nat_tree_lock
+31b627e f2fs: validate before set/clear free nat bitmap
+86f39f8 f2fs: avoid opened loop codes in __add_ino_entry
+0144eb5 f2fs: apply write hints to select the type of segments for buffered write
+09e23bc f2fs: introduce scan_curseg_cache for cleanup
+d74c10c f2fs: optimize the way of traversing free_nid_bitmap
+8c7166a f2fs: keep scanning until enough free nids are acquired
+42055bf f2fs: trace checkpoint reason in fsync()
+a12253f f2fs: keep isize once block is reserved cross EOF
+6a02bd4 f2fs: avoid race in between GC and block exchange
+62310ca f2fs: save a multiplication for last_nid calculation
+b49d4e6 f2fs: fix summary info corruption
+b026490 f2fs: remove dead code in update_meta_page
+3cb727e f2fs: remove unneeded semicolon
+d402f01 f2fs: don't bother with inode->i_version
+55a3aa4 f2fs: check curseg space before foreground GC
+e7bd3c3 f2fs: use rw_semaphore to protect SIT cache
+ec6f1a7 f2fs: support quota sys files
+1b5fc8a f2fs: add quota_ino feature infra
+acd12a7 f2fs: optimize __update_nat_bits
+49063b6 f2fs: modify for accurate fggc node io stat
+c295fd6 Revert "f2fs: handle dirty segments inside refresh_sit_entry"
+0d540b0 f2fs: add a function to move nid
+f9665c9 f2fs: export SSR allocation threshold
+5221ce2 f2fs: give correct trimmed blocks in fstrim
+2b8ffb6 f2fs: support bio allocation error injection
+32d0c97 f2fs: support get_page error injection
+199ea99 f2fs: add missing sysfs description
+44f1825 f2fs: support soft block reservation
+440ec429 f2fs: handle error case when adding xattr entry
+d69be6d f2fs: support flexible inline xattr size
+7ae3cca f2fs: show current cp state
+1f151a0 f2fs: add missing quota_initialize
+d16cf96 f2fs: show # of dirty segments via sysfs
+778ff44 f2fs: stop all the operations by cp_error flag
+0462b69 f2fs: remove several redundant assignments
+29f2f84 f2fs: avoid using timespec
+b0b751f f2fs: fix to correct no_fggc_candidate
+af4d3bb Revert "f2fs: return wrong error number on f2fs_quota_write"
+8350f99 f2fs: remove obsolete pointer for truncate_xattr_node
+7bec9af f2fs: retry ENOMEM for quota_read|write
+059315f f2fs: limit # of inmemory pages
+31570b0 f2fs: update ctx->pos correctly when hitting hole in directory
+fa881d4 f2fs: relocate readahead codes in readdir()
+334d725 f2fs: allow readdir() to be interrupted
+620ebfe f2fs: trace f2fs_readdir
+3a1300a f2fs: trace f2fs_lookup
+0f9dc8f f2fs: skip searching non-exist range in truncate_hole
+d4b50c7 FIX: f2fs: expose some sectors to user in inline data or dentry case
+36c2402 f2fs: avoid stale fi->gdirty_list pointer
+5d33a76 f2fs/crypto: drop crypto key at evict_inode only
+83407a2 f2fs: fix to avoid race when accessing last_disk_size
+5fd9f40 f2fs: Fix bool initialization/comparison
+d83b72c f2fs: give up CP_TRIMMED_FLAG if it drops discards
+6fa235f f2fs: trace f2fs_remove_discard
+47c22c3 f2fs: reduce cmd_lock coverage in __issue_discard_cmd
+5972c0c f2fs: split discard policy
+66fe933 f2fs: wrap discard policy
+6ef8d5b f2fs: support issuing/waiting discard in range
+27d900a f2fs: fix to flush multiple device in checkpoint
+3926f01 f2fs: enhance multiple device flush
+005af4d f2fs: fix to show ino management cache size correctly
+89353f8 f2fs: drop FI_UPDATE_WRITE tag after f2fs_issue_flush
+cae91cd f2fs: obsolete ALLOC_NID_LIST list
+4e58f2b f2fs: convert inline data for direct I/O & FI_NO_PREALLOC
+ae5ae5a f2fs: allow readpages with NULL file pointer
+b8b2085 f2fs: show flush list status in sysfs
+eadc01d f2fs: introduce read_xattr_block
+d74abcd f2fs: introduce read_inline_xattr
+8d90260 Revert "f2fs: reuse nids more aggressively"
+638c53c Revert "f2fs: node segment is prior to data segment selected victim"
+f1281bb FROMLIST: f2fs: expose some sectors to user in inline data or dentry case
+4c1275d UPSTREAM: f2fs: fix potential panic during fstrim
+b745a63 f2fs: add lazytime mount option
+9f951ce vfs: add support for a lazytime mount option
+fee54d2 f2fs: hurry up to issue discard after io interruption
+068d74b f2fs: fix to show correct discard_granularity in sysfs
+9d976c9 f2fs: detect dirty inode in evict_inode
+4c76c4b f2fs: clear radix tree dirty tag of pages whose dirty flag is cleared
+00e66b5 f2fs: speed up gc_urgent mode with SSR
+ac62998 f2fs: better to wait for fstrim completion
+7bf26a3 f2fs: avoid race in between read xattr & write xattr
+3b7a9db f2fs: make get_lock_data_page to handle encrypted inode
+3b49fb7 f2fs: use generic terms used for encrypted block management
+f3bad71 f2fs: introduce f2fs_encrypted_file for clean-up
+3481d4c Revert "f2fs: add a new function get_ssr_cost"
+96edc3a f2fs: constify super_operations
+f55a4b3 f2fs: fix to wake up all sleeping flusher
+ad7d5aa f2fs: avoid race in between atomic_read & atomic_inc
+e6c2203 f2fs: remove unneeded parameter of change_curseg
+af1c5f2 f2fs: update i_flags correctly
+3daa0d0 f2fs: don't check inode's checksum if it was dirtied or writebacked
+2be003a f2fs: don't need to update inode checksum for recovery
+62044cd f2fs: trigger fdatasync for non-atomic_write file
+09b59f9 f2fs: fix to avoid race in between aio and gc
+8107d45 f2fs: wake up discard_thread iff there is a candidate
+87eb44e f2fs: return error when accessing insane flie offset
+d58d39c f2fs: trigger normal fsync for non-atomic_write file
+aa674f8 f2fs: clear FI_HOT_DATA correctly
+68354c5 f2fs: fix out-of-order execution in f2fs_issue_flush
+2deb0b2 f2fs: issue discard commands if gc_urgent is set
+f11cec8 f2fs: remove unused function overprovision_sections
+d2f16e9 f2fs: add tracepoint for f2fs_gc
+c62b26c f2fs: retry to revoke atomic commit in -ENOMEM case
+421d2fe f2fs: let fill_super handle roll-forward errors
+bfaffcb f2fs: merge equivalent flags F2FS_GET_BLOCK_[READ|DIO]
+4046fe1 f2fs: support journalled quota
+504d721 f2fs: fix potential overflow when adjusting GC cycle
+06f07812 f2fs: avoid unneeded sync on quota file
+aa80ce8 f2fs: introduce gc_urgent mode for background GC
+52cc8cc f2fs: fix the size value in __check_sit_bitmap
+336b13a f2fs: add app/fs io stat
+1151c54 f2fs: do not change the valid_block value if cur_valid_map was wrongly set or cleared
+61eff40 f2fs: update cur_valid_map_mir together with cur_valid_map
+c5cd78f f2fs: use printk_ratelimited for f2fs_msg
+d725545 f2fs: expose features to sysfs entry
+14b7676 f2fs: support inode checksum
+9973697 f2fs: return wrong error number on f2fs_quota_write
+6256fea f2fs: provide f2fs_balance_fs to __write_node_page
+6d28d55 f2fs: introduce f2fs_statfs_   *
+f3ed5a9 f2fs: don't need to wait for node writes for atomic write
+2b5b5a4 f2fs: avoid naming confusion of sysfs init
+fccdd17 f2fs: support    * quota
+bde21d6 f2fs: record quota during dot{,dot} recovery
+efda3c6 f2fs: enhance on-disk inode structure scalability
+0180d35 f2fs: make max inline size changeable
+e98d779 f2fs: preserve i_mode if __f2fs_set_acl() fails
+76ff8ed f2fs: alloc new nids for xattr block in recovery
+3951fcf f2fs: spread struct f2fs_dentry_ptr for inline path
+1fb3cbf f2fs: remove unused input parameter
+bc44490 FROMLIST: f2fs: introduce discard_granularity sysfs entry
+c7439cf FROMLIST: f2fs: use IPU for cold files
+743386f FROMLIST: f2fs: make background threads of f2fs being aware of freezing
+
+   * packages/apps/NitrogenSettings/
+daba684 Hungarian translation for NitrogenSettings
+
+====================
+     01-11-2018
+====================
+
+
+   * build/make/
+a785d2f build: add org.codeaurora to package whitelist
+
+   * device/oneplus/oneplus3/
+75e8d2e op3(t): switch to xml audio policy included op3(t): add audio routing for AUDIO_DEVICE_OUT_USB_HEADSET op3(t): use shared audio policy files from av
+db57104 op3(t): lets do the kernel warp again
+
+   * frameworks/base/
+59e3f4c Add @hide to fix build
+
+   * kernel/oneplus/msm8996/
+7d08bda mdss_fb: add backlight dimmer option
+3c5ed92 Optimize the display effects of SRGB and dci-p3 from old branch
+107b36a defconfig: Add SOUND_CONTROL
+faaa594 Add a simple api to query the display state (on/off) at any point in time
+12f916e ASoC: wcd9335: prevent speaker gain from being reset
+1beeabd ASoC: wcd9335: add analog headphone gain
+2cad116 ASoC: wcd9335: fix speaker gain controls
+31cfbfe ASoC: wcd9335: add mic gain and speaker gain for OnePlus3
+9bdd4f2 ASoC: wcd9335: Sound control
+d0864ba cpu: Don't allow CPUs in the power cluster to be unplugged
+aaa8027 workqueue: Schedule workers on CPU0 or CPU0/CPU1 by default
+710b8e0 clk: msm: clock-cpu-8996: Use CLKFLAG_NO_RATE_CACHE for perfcl_hf_mux
+8235852 cpufreq: interactive: Skip timer when policy->min == policy->max
+e1f3495 qcom-cpufreq: Use CLKFLAG_NO_RATE_CACHE
+2b2a988 cpu_input_boost: Decrease screen unblank boost to 2s
+ae42e85 cpu_input_boost: Use power efficient workqueues
+a372521 defconfig: add cpu_input_boost and clean others
+ce68c94 cpu_input_boost: Prevent panics on init due to race conditions
+c7d467f cpu_input_boost: Fix up dangling return in validate_cpu_freq()
+26b7068 cpu_input_boost: Ensure validate_cpu_freq() only uses valid freqs
+8e9a14b cpu_input_boost: Remove scheduler boost on screen wake
+4a33b44 cpu_input_boost: Make get_valid_cpufreq() usage hotplug-safe
+2a1c91a cpu_input_boost: Fix checkpatch.pl warnings and clean up some styling
+e44cc30 cpu_input_boost: Fix trivial unsigned integer underflow
+4086cf6 cpu_input_boost: Validate input boost frequencies
+dd35373 cpu_input_boost: Enable scheduler boost on screen wake
+65a5308 cpu_input_boost: Perform load assessment based on policy->cur
+ee0c4e9 cpu_input_boost: Increase duration for screen-wake boost to 3000 ms
+e219e94 cpu_input_boost: Make boosting more dynamic and efficient
+2fc55f4 cpu_input_boost: Don't extend little CPU's boost duration
+2abdb8b cpu_input_boost: Don't sleep in atomic context for continuous boosts
+d417305 cpu_input_boost: Improve efficiency when there is constant input
+d06229c cpu_input_boost: Boost multiple CPUs more often
+b584fe7 cpu_input_boost: Trigger max boost when button is pressed during suspend
+b94a78e cpu_input_boost: Boost on button input
+ff6e391 cpu_input_boost: Use FB_EARLY_EVENT_BLANK for unblank boost
+be39df3 cpu_input_boost: Give fb_boost_nb the highest priority
+8fa08da cpu_input_boost: Restructure for big.LITTLE CPUs
+6f979de cpu_input_boost: Remove WQ_NON_REENTRANT
+f31735d cpu_input_boost: Use fixed-width integer types for local variables
+2e7e305 cpu_input_boost: Remove unnecessary kzallocs
+ca2050a cpu_input_boost: Clean up code style
+de96d74 cpu_input_boost: Increase framebuffer boost duration to 1100 ms
+2680623 cpu_input_boost: Fix synchronization issues
+9a8bcc8 cpu_input_boost: Remove module references
+27dabbf cpu_input_boost: Remove thread-migration boosting and clean up
+9a5b513 cpu_input_boost: Remove sync_threshold to recover from regression
+b904795 cpu_input_boost: Rewrite to use dual-core boosting and clean up
+368f79c cpu_input_boost: Increase unblank-boost duration to 900ms
+3236951 cpu_input_boost: Reduce input-boost duration
+f33c6e7 cpu_input_boost: Remove input-boost frequency limitations
+71c3d63 cpu_input_boost: Remove boost on framebuffer blank
+f490157 cpu_input_boost: Add boosting on thread migration
+4fbed4a cpu_input_boost: Boost on framebuffer blank/unblank
+27c4425 cpu_input_boost: Clean up and fix bugs
+cd31154 cpu_input_boost: Remove deprecated sprintf usage
+46102f5 cpu_input_boost: Minor clean-up in notifier
+a9ffdce cpu_input_boost: Run all workers on CPU0
+8ec3be2 cpu_input_boost: Add support for userspace control
+1e52f89 cpu_input_boost: Update boost duration equation
+75769d3 cpu_input_boost: Remove redundant calculations and logic
+fa006b9 cpu_input_boost: Remove cpufreq get/put API usage
+588cf28 cpu_input_boost: Remove spin locks
+3554e5f cpu_input_boost: Make long function names shorter and more consistent
+59e038f cpu_input_boost: Use spinlocks instead of mutex locks
+98b4baf cpu_input_boost: Specify some variables as read-mostly
+9584033 cpu_input_boost: Replace auto-freq finder with sysfs interface
+8c6c8fc cpu_input_boost: Prioritize primary CPU
+f2f1fbb cpufreq: Introduce CPU input boost driver
+0e5d854 wakeup: add some wakelocks from cheeseburger
+5592d74 drivers: wakeup: allow to request and count wakelocks with screen on.
+30fc4a9 drivers: wakeup: allow 1 wakeup from IPA_WS every now and then
+70ad608 drivers: wakeup: be more thorough with blocking wakelocks
+4ac0661 drivers: wakeup: it's pointless to output the active wakeup sources during screen on, no need to go through the rcu locks and list iterations every now and then
+21253e1 drivers: wakeup: there's no much point in running the blockers during screen on
+00a31b8 drivers: wakeup: run the wakelock blockers during wakeup_source activation and every resume
+59ad853 drivers: wakeup: more thoroughly deactivation of wakelocks
+d406ab5 drivers: wakeup: add options to disable timerfd, netlink and wlan wakelocks
+2130695 drivers: wakeup: bypass two WiFi wakelocks
+4d6e274 power: wakeup: prevent IPA_WS wakelock from being acquired by default
+b34a9d9 Enable USB fast charge by default
+79fd134 drivers: misc: implement usb fast charge mode
+3fc936d block: add zen scheduler
+8847612 Stop appending commit sha to kernel string
+42e7192 Merge remote-tracking branch 'linux/linux-3.18.y' into o2
+cbabe7b Omni -> Nos
+
