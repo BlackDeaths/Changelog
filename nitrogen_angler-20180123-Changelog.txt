@@ -3,7 +3,13 @@
 ====================
 
 
+   * build/make/
+ca3abf7 tasks: kernel: Add support for Clang kernel builds
+300ebba kernel: Allow building dtbo.img
+
    * device/huawei/angler/
+3456f7b angler: squash of telephony fixes
+efc8aa3 Remove ims
 6956955 Angler: update fingerprint to OPM3.171019.013/4499252
 923929b Kill logspam
 b62511c Use two threads for dex2oat in running system
@@ -18,7 +24,29 @@ e0a7c53 power:8992/8994: Correct 4+0 screen off config
 9ea2ed9 angler: Fixes for new VoLTE without VT setup
 
    * device/oneplus/oneplus3/
+bd04908 wifi: Update WCNSS_qcom_cfg.ini from latest beta
 94709d1 overlay: Enable ManualSubProvisioning
+
+   * packages/apps/NitrogenSettings/
+4a75fe9 Fixed typo in nitrogen_strings.xml
+
+   * packages/apps/Settings/
+58836b4 DoubletapPowerForCamera disabled by default [1/2]
+ffd61d1 SimSettings: Disable ManualSubProvisioning by default
+3117b35 Settings: fix neverending progress on sim activation change
+
+   * packages/apps/Snap/
+a2ebc58 Revert "Revert "TEMP:Revert "Camera: Powerkey shutter (2/2)"""
+
+   * vendor/huawei/
+48bee83 Merge pull request #1 from AICP/o8.0
+
+====================
+     01-22-2018
+====================
+
+
+   * device/oneplus/oneplus3/
 6ed2f72 init.qcom.power: Update profile by Sasha (Inkyz \ SyCreed)
 
    * frameworks/base/
@@ -38,18 +66,8 @@ fcf1662 Add Italian translations
 c7068dd TR: Update nitrogen_strings.xml
 ce35284 Return pocket judge
 
-   * packages/apps/Settings/
-ffd61d1 SimSettings: Disable ManualSubProvisioning by default
-3117b35 Settings: fix neverending progress on sim activation change
-
-   * packages/apps/Snap/
-a2ebc58 Revert "Revert "TEMP:Revert "Camera: Powerkey shutter (2/2)"""
-
-   * vendor/huawei/
-48bee83 Merge pull request #1 from AICP/o8.0
-
 ====================
-     01-22-2018
+     01-21-2018
 ====================
 
 
@@ -80,24 +98,6 @@ de2ba74 Update PL translation
 
    * packages/services/Telephony/
 4ad2070 Fix non-protected broadcasts sent from phone process.
-
-====================
-     01-21-2018
-====================
-
-
-   * device/xiaomi/kenzo/
-5a9e842 msm8974: gps: Unlock the GPS
-
-   * packages/apps/Bluetooth/
-42efd35 HeadsetClientStateMachine: Add divide-by-zero checks for bluetooth volume handling for amVol and hfVol.
-
-   * packages/apps/Settings/
-6a8118c Settings: no need to show a success alert dialog on sim switch
-874b4cc Settings: vectorize ic_live_help icon and fix theming for SimDialogActivity
-5d0982d MultiSim: Fix hardcoded text color
-
-   * packages/services/Telephony/
 ed5ef42 Telephony: Disable toast for Supplementary Service Notification
 
 ====================
@@ -117,8 +117,7 @@ c12f669 add nitrogen vendor
 1d07606 Merge pull request #1 from ezio84/o2
 
    * device/xiaomi/kenzo/
-4bf38d2 XiaomiParts: fix AlertDialog color
-106ccc5 device: add telephony-ext to BOOT_JARS
+5a9e842 msm8974: gps: Unlock the GPS
 
    * frameworks/base/
 f420ee6 Recents FAB: fix theming
@@ -143,17 +142,16 @@ f1c77ed net/unix: don't show information about sockets from other namespaces
 3cbdc37 ARM: 8720/1: ensure dump_instr() checks addr_limit
 4cff62f ANDROID: sdcardfs: Move default_normal to superblock
 
+   * packages/apps/Bluetooth/
+42efd35 HeadsetClientStateMachine: Add divide-by-zero checks for bluetooth volume handling for amVol and hfVol.
+
    * packages/apps/Settings/
-8d5861d SimSettings: Correctly disabling sim switch without sim card
-6e0c29b Clean up SIM enable toggle implementation
-e7781e7 Settings: port manual provisiong support commit 7adcacb2b7b586f2cc1fe26db769e63553a89494 Author: Ricardo Cerqueira <ricardo@cyngn.com> Date:   Thu Jul 28 12:29:40 2016 +0100
+6a8118c Settings: no need to show a success alert dialog on sim switch
+874b4cc Settings: vectorize ic_live_help icon and fix theming for SimDialogActivity
+5d0982d MultiSim: Fix hardcoded text color
 
    * packages/services/Telephony/
 3716a04 Fix theming
-47b8797 Fix multiple apn items issue
-
-   * vendor/codeaurora/telephony/
-896d914 Revert "IMS-VT: Low battery handling for Video calls"
 
 ====================
      01-19-2018
@@ -162,6 +160,29 @@ e7781e7 Settings: port manual provisiong support commit 7adcacb2b7b586f2cc1fe26d
 
    * device/oneplus/oneplus3/
 cfe18ea op3(t): add persist.radio.aosp_usr_pref_sel for Tissot telephony
+
+   * device/xiaomi/kenzo/
+4bf38d2 XiaomiParts: fix AlertDialog color
+106ccc5 device: add telephony-ext to BOOT_JARS
+
+   * packages/apps/Settings/
+8d5861d SimSettings: Correctly disabling sim switch without sim card
+6e0c29b Clean up SIM enable toggle implementation
+e7781e7 Settings: port manual provisiong support commit 7adcacb2b7b586f2cc1fe26db769e63553a89494 Author: Ricardo Cerqueira <ricardo@cyngn.com> Date:   Thu Jul 28 12:29:40 2016 +0100
+
+   * packages/services/Telephony/
+47b8797 Fix multiple apn items issue
+
+   * vendor/codeaurora/telephony/
+896d914 Revert "IMS-VT: Low battery handling for Video calls"
+
+   * vendor/oneplus/
+4676292 op3(t): Use qti telephony from Tissot (Xiaomi Mi A1)
+
+====================
+     01-18-2018
+====================
+
 
    * frameworks/base/
 b933720 NitrogenUtils: Add isAppInstalled
@@ -227,10 +248,11 @@ adccbb2 Revert "Add support to launch call barring"
 375792b Push pixel theme overlay This quickly allows us to create more themes based on the pixel theme found inside the Oreo factory image.
 
    * vendor/oneplus/
-4676292 op3(t): Use qti telephony from Tissot (Xiaomi Mi A1)
+8f3e743 op3: add missed librcc.so ims_media_jni: Error loading library lib-imsvt.so: dlopen failed: library "librcc.so" not found
+869e20a OP3: Update blobs to OnePlus Open Beta 21
 
 ====================
-     01-18-2018
+     01-17-2018
 ====================
 
 
@@ -296,38 +318,36 @@ ce9c95f can: gs_usb: fix return value of the "set_bittiming" callback
    * kernel/xiaomi/kenzo/
 96f8cf6 Squashed dt2w with proximity check
 
+   * packages/apps/DUI/
+e4c72f8 Implement darkintensity also for smartbar button ripple animation
+
    * packages/apps/OmniJaws/
 0cfaac6 OmniJaws: looks like Settings
+
+   * packages/apps/Snap/
+95b3db5 Revert "TEMP:Revert "Camera: Powerkey shutter (2/2)""
 
    * system/qcom/
 a0d762d Merge tag 'LA.UM.6.4.r1-05900-8x98.0' of https://source.codeaurora.org/quic/la/platform/system/qcom into HEAD
 
-   * vendor/oneplus/
-8f3e743 op3: add missed librcc.so ims_media_jni: Error loading library lib-imsvt.so: dlopen failed: library "librcc.so" not found
-869e20a OP3: Update blobs to OnePlus Open Beta 21
-
 ====================
-     01-17-2018
+     01-16-2018
 ====================
 
 
    * device/oneplus/oneplus3/
 af5833f CarrierConfig: merge back all volte lines from prev version
 
-   * packages/apps/DUI/
-e4c72f8 Implement darkintensity also for smartbar button ripple animation
-
    * packages/apps/NitrogenSettings/
 cc0ba51 LockscreenWeather: fix NPE without OmniJaws
 
    * packages/apps/OmniJaws/
 d0d4859 OpenWeatherMap: Add user API key
-
-   * packages/apps/Snap/
-95b3db5 Revert "TEMP:Revert "Camera: Powerkey shutter (2/2)""
+0f56c15 Revert "WeatherProviders: Remove OpenWeatherMap."
+3b6a5e6 Disable dexpreopt
 
 ====================
-     01-16-2018
+     01-15-2018
 ====================
 
 
@@ -344,16 +364,18 @@ de40193 HU: Update strings.xml
 514ed5b HU: Create nitrogen-strings.xml
 
    * packages/apps/OmniJaws/
-0f56c15 Revert "WeatherProviders: Remove OpenWeatherMap."
-3b6a5e6 Disable dexpreopt
 8bb50a9 OmniJaws: remove hard dep to network location
 9b23104 HU: Update strings.xml
 
    * packages/apps/Settings/
 63389e9 HU: Create nitrogen_settings.xml
 
+   * packages/apps/Snap/
+94b99f6 Snap: check tags before using them
+e8aa3b5 Snap: Rip out hdr-need-1x option
+
 ====================
-     01-15-2018
+     01-14-2018
 ====================
 
 
@@ -381,20 +403,4 @@ bd1209d ANDROID: sdcardfs: d_splice_alias can return error values
 
    * packages/apps/Settings/
 e4f7d1a Notification light: update from abc
-
-   * packages/apps/Snap/
-94b99f6 Snap: check tags before using them
-e8aa3b5 Snap: Rip out hdr-need-1x option
-
-====================
-     01-14-2018
-====================
-
-
-   * device/oneplus/oneplus3/
-9a656e6 update CarrierConfig xml from op3 5.0.1
-cc13371 init.qcom.power: Update profile by Sasha (Inkyz \ SyCreed)
-
-   * packages/apps/Settings/
-51a8286 Revert "Enable power save config of system apps [2/2]"
 
