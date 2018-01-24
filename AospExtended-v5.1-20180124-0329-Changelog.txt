@@ -1,0 +1,140 @@
+====================
+     01-24-2018
+====================
+
+   * frameworks/base/
+644fd17  Option to use accent color for pulse [2/3]  [Shubham Singh]
+   * packages/apps/DUI/
+5f4c849  Option to use accent color for pulse [1/3]  [Shubham Singh]
+   * packages/apps/Extensions/
+afe7083  Option to use accent color for pulse [3/3]  [Shubham Singh]
+
+====================
+     01-23-2018
+====================
+
+   * manifest/
+6bf9eb9  manifest: Update Readme  [AmolAmrit]
+   * packages/apps/Settings/
+dd8d65e  About us: Rework  [Shubham Singh]
+   * packages/apps/Snap/
+a2ebc58  Revert "Revert "TEMP:Revert "Camera: Powerkey shutter (2/2)"""  [BlackDeath]
+   * packages/apps/Updates/
+23e28bc  UpdateCheckService: Disable retry attempts, set timeout to 15 seconds  [Shubham Singh]
+5cebf52  Use alternative function for formatFileSize  [Shubham Singh]
+d3a0df8  Refactor UpdateCheckService  [Shubham Singh]
+3fe1663  Improve DownloadRequest and NotificationChannel  [Shubham Singh]
+df8a134  Merge "Fixed spelling mistake" into 8.1.x  [Gerrit Code Review]
+   * vendor/huawei/
+48bee83  Merge pull request #1 from AICP/o8.0  [GitHub]
+
+====================
+     01-22-2018
+====================
+
+   * build/make/
+5732fe9  Merge "Build Extended theme [3/3]" into 8.1.x  [Gerrit Code Review]
+   * device/aosp/sepolicy/
+6474a95  sepolicy: qcom: add persist_block_device type  [davidevinavil]
+   * packages/apps/Settings/
+bfc5b8a  Merge "Settings: Add extended theme [2/3]" into 8.1.x  [Gerrit Code Review]
+
+====================
+     01-21-2018
+====================
+
+   * device/qcom/sepolicy/
+a934bc5  Fix path  [Shubham Singh]
+   * frameworks/base/
+57c1fd8  Base: Add extended theme [1/3]  [Shubham Singh]
+   * hardware/qcom/audio-caf/msm8916/
+367c0b5  policy_hal: add missing libbase include  [Shubham Singh]
+a219f14  HAL: Align error code with HIDL wrapper  [Shubham Singh]
+5e59b48  policy_hal: fix build with concurrent audio capture  [Shubham Singh]
+7e2dd4f  AudioPolicy: fix up getInputForAttr for O  [Shubham Singh]
+cf26db9  audio: Use vendor specific tinycompress  [Shubham Singh]
+572b36d  policy_hal: fix for MR1 function prototype.  [Shubham Singh]
+a9c1bf1  hal: audio-test: Move omx tests mm-audio-internal  [Shubham Singh]
+   * hardware/qcom/audio-caf/msm8996/
+7683ec3  hal: Support the audio amplifier hook  [davidevinavil]
+   * hardware/qcom/display-caf/msm8916/
+fd7a381  hwc: Set ioprio for vsync thread  [Shubham Singh]
+   * hardware/qcom/power/
+c9b1096  power: Update perf hint ID's for display on off  [Shubham Singh]
+   * manifest/
+ab4cedc  Track these from aosp  [Shubham Singh]
+8d27389  Sync HALs for all boards  [Shubham Singh]
+
+====================
+     01-20-2018
+====================
+
+   * build/make/
+c391dae  Get build date-time from variable  [Shubham Singh]
+   * frameworks/base/
+f6f688f  Fix translation derp  [Shubham Singh]
+98dbb9a  Power button flashlight toggle: add proximity sensor check  [Shubham Singh]
+6caf3ba  Battery saver QS tile improvements  [Shubham Singh]
+2e1bba1  Improve the brightness footer slider animation when on 2nd QS page  [Shubham Singh]
+5eb1adc  Revert "Battery tile: fix label when charging"  [Shubham Singh]
+22beedd  Screenshot tile: persist screenshot type after reboot  [Shubham Singh]
+aa16eda  Recents: Fix NPE with locked tasks  [Shubham Singh]
+e31224b  base: fix double volume events on screen off  [Shubham Singh]
+8b7e4fe  Flashlight toggle api improvements  [Shubham Singh]
+228c505  base: refine partial screenshot handling  [Shubham Singh]
+2082a40  App screenshot filename: keep compatibility with Cyrillic  [Shubham Singh]
+84dfadf  KeyguardHostView: Dismiss keyguard automatically when face is recognized  [Shubham Singh]
+b5db648  SystemUI: SIM PIN locked view can't pop up  after removed one SIM  [Shubham Singh]
+f7dbd33  Power menu scrollview improvements  [Shubham Singh]
+6b8634d  Prevent deadlock when going out of idle state  [Shubham Singh]
+26010dc  Automatic translation import  [Shubham Singh]
+8fcd2cd  Automatic translation import  [Shubham Singh]
+   * kernel/huawei/angler/
+88091e6  angler: sigma kernel 2.0  [Pranav Vashi]
+9b262c6  audit: fix a double fetch in audit_log_single_execve_arg()  [Pranav Vashi]
+1361628  audit: Fix use after free in audit_remove_watch_rule()  [Pranav Vashi]
+f268644  signal: Only reschedule timers on signals timers have sent  [Pranav Vashi]
+f6f2e46  panic: add cpu/pid to warn_slowpath_common in WARNING printk()s  [Pranav Vashi]
+302c631  signal: protect SIGNAL_UNKILLABLE from unintentional clearing.  [Pranav Vashi]
+699886a  PM: convert do_each_thread to for_each_process_thread  [Pranav Vashi]
+974c27d  sched: s/do_each_thread/for_each_process_thread/ in core.c  [Pranav Vashi]
+cd730e2  sched: Change thread_group_cputime() to use for_each_thread()  [Pranav Vashi]
+c1bfc4c  rcu: Don't disable CPU hotplug during OOM notifiers  [Pranav Vashi]
+2de8fa2  rcu: Squashed commit of the following:  [Pranav Vashi]
+995d480  Revert "Revert "rcu: Make RCU_FAST_NO_HZ take advantage of numbered callbacks""  [Pranav Vashi]
+f1c77ed  net/unix: don't show information about sockets from other namespaces  [Pranav Vashi]
+3cbdc37  ARM: 8720/1: ensure dump_instr() checks addr_limit  [Pranav Vashi]
+4cff62f  ANDROID: sdcardfs: Move default_normal to superblock  [Pranav Vashi]
+   * manifest/
+9059150  Add initial crowdin manifest  [Shubham Singh]
+   * packages/apps/Extensions/
+6e0c1e9  Automatic translation import  [Shubham Singh]
+ce08917  Automatic translation import  [Shubham Singh]
+   * packages/apps/FMRadio/
+b7c0040  Automatic translation import  [Shubham Singh]
+eae3c29  Automatic translation import  [Shubham Singh]
+a6e2a6e  Update string file name  [Shubham SIngh]
+   * packages/apps/Messaging/
+1a8af77  Automatic translation import  [Shubham Singh]
+853fafd  Automatic translation import  [Shubham Singh]
+   * packages/apps/PackageInstaller/
+6f1d8f0  Automatic translation import  [Shubham Singh]
+1459b6a  Automatic translation import  [Shubham Singh]
+26b75f8  Update string file name  [Shubham SIngh]
+   * packages/apps/Settings/
+67a4ef4  AexOtaPreferenceController:Update package name  [Shubham Singh]
+c2d99b3  Automatic translation import  [Shubham Singh]
+b9b370f  Automatic translation import  [Shubham Singh]
+   * packages/apps/Updates/
+e3b4abd  Automatic translation import  [Shubham Singh]
+8ece16c  Fixed spelling mistake  [GitHub]
+c73482a  Automatic translation import  [Shubham Singh]
+   * packages/providers/DownloadProvider/
+e962670  Automatic translation import  [Shubham Singh]
+164837c  Move pause/resume strings to ex_strings.xml  [Shubham Singh]
+   * vendor/aosp/
+eb2256a  Hold build date in a variable  [Shubham Singh]
+5b9e3f9  vendor: Use python script to fetch official devices  [Shubham Singh]
+4bbe43c  bfqio: Use pragma once for include guard  [Shubham Singh]
+269a8b5  bfqio: Remove redundant extern  [Shubham Singh]
+
