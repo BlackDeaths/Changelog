@@ -1,0 +1,238 @@
+====================
+     02-10-2018
+====================
+
+
+   * device/huawei/angler/
+5acc094 angler: Add display file creation rules
+c365f06 angler: update build fingerprint & desc to OPM3.171019.014
+
+   * device/oneplus/oneplus3/
+2383a47 init.qcom.power: Update profile by Sasha (Inkyz \ SyCreed)
+
+   * frameworks/base/
+c5b1f756951 Themes: Add some dialogs again (Fix for PackageInstaller and etc)
+
+   * packages/apps/NitrogenSettings/
+5e5a1b1 Update CS and SK
+
+   * packages/apps/Settings/
+55a63f40cf Return themes to AndroidManifest.xml because we have correct overlay now
+6e39b4df6b Jump to homescreen and back on theme change
+
+   * vendor/huawei/
+c80bada Merge pull request #2 from AICP/o8.1
+
+   * vendor/oneplus/
+13e4ee7 Front Camera HDR+ Fix Thread on XDA: https://forum.xda-developers.com/oneplus-3t/themes/mod-camera-hdr-fix-t3742366
+
+====================
+     02-09-2018
+====================
+
+
+   * frameworks/base/
+33a73832af0 Hide keyguard shortcuts when quick settings disabled on secure lockscreen
+675c88a5d7d Themes: Add more dialogs Thanks to @Mazda-- and @jhenrique09
+
+   * packages/apps/Settings/
+70142497ea Themes: Fix BT pair dialog
+
+====================
+     02-08-2018
+====================
+
+
+   * frameworks/base/
+e1aea6c8677 Add a one time QS dialog for the caffeine tile
+01e287496ea Remove other options off the Caffeine QS Tile but infinite
+81080a0945e Ambient music ticker improvements
+
+   * system/sepolicy/
+dd01ba7d sepolicy: Ignore custom additions
+
+   * vendor/huawei/
+561f8da angler: update blobs from OPM3.171019.014 factory image
+
+====================
+     02-07-2018
+====================
+
+
+   * kernel/huawei/angler/
+e8cb58e9dc0 futex: Prevent overflow by strengthen input validation
+77e4e5cb33e pipe: avoid round_pipe_size() nr_pages overflow on 32-bit
+5d91bc4aebe af_key: fix buffer overread in parse_exthdrs()
+1ae2059798e af_key: fix buffer overread in verify_address_len()
+26a732a948a ALSA: pcm: Remove yet superfluous WARN_ON()
+9b00d00651f Merge aosp updates into 8.1
+7b1086182e7 Merge branch 'android-msm-angler-3.10-oreo-m3' into 8.1
+
+====================
+     02-06-2018
+====================
+
+
+   * build/make/
+02c39322e Merge tag 'android-8.1.0_r14' into o2
+
+   * frameworks/av/
+38175918d Merge tag 'android-8.1.0_r14' into o2
+
+   * frameworks/base/
+47db41a7401 Theme safe boot dialog
+fd59e73a55f SimColors: Use _800 color Default Dialer color is <color name="dialer_theme_color">#2A56C6</color> Use <color name="Blue_800">#ff2a56c6</color> for consistent
+dd1c3526190 Merge tag 'android-8.1.0_r14' into o2
+264d6e2becd Update zh_rCN translation
+befe9dfff12 Themes: Add Light.Dialog.Alert overlay @xyyx: add black
+8e62f19bcaf Update PL translation
+d22af4c9845 Theme DUI dialogs & things
+
+   * hardware/interfaces/
+50b48c02 Merge tag 'android-8.1.0_r14' into o2
+
+   * packages/apps/NitrogenSettings/
+ac4064a Update zh_rCN translation
+
+   * packages/apps/Settings/
+5cd2398e6b Merge tag 'android-8.1.0_r14' into o2
+98309e5e3d Update zh_rCN translation
+4ce08e99c3 Themes: Fix ActivityPicker
+
+   * packages/providers/DownloadProvider/
+9b41243 Merge tag 'android-8.1.0_r14' into o2
+
+====================
+     02-05-2018
+====================
+
+
+   * build/make/
+0f93b1fa9 Build DUI themes
+
+   * kernel/oneplus/msm8996/
+11274296710b oneplus3_defconfig: Remove CONFIG_WLAN_FEATURE_RX_WAKELOCK -  WLAN_FEATURE_HOLD_RX_WAKELOCK feature acquires 50 ms wake lock   for every rx  data packet. - Remove this feature such that we can avoid wake lock for every    RX data packet.
+
+   * kernel/xiaomi/kenzo/
+8fc83ec1092 firmware_class: Tie exporting caching routines with CONFIG_CACHE_FW
+9b4db73c094 firmware_class: make firmware caching configurable
+
+   * packages/apps/DUI/
+dca4b92 Update PL translation
+
+   * packages/apps/Messaging/
+a803b8d Add PL translation
+
+   * packages/apps/NitrogenSettings/
+4d30c0a Update PL translation
+
+   * packages/apps/Settings/
+a45b8e57f7 Update PL translation
+4af5822588 DUI: Fix theming custom action dialog
+
+====================
+     02-04-2018
+====================
+
+
+   * frameworks/base/
+cc703842b77 Recents FAB: fix theming
+0cb36456ae9 SystemUI: Add data saver icon to blacklist
+6b9bb1ba426 Themes: use accent color from light theme
+
+   * vendor/nitrogen/
+891844c themes: add material_deep_teal_500 color to fix light theme
+
+====================
+     02-03-2018
+====================
+
+
+====================
+     02-02-2018
+====================
+
+
+   * frameworks/base/
+5958780f841 Add api to force show led lights
+
+   * kernel/oneplus/msm8996/
+636888c4f3b0 Merge remote-tracking branch 'linux/linux-3.18.y' into o2
+
+   * packages/apps/NitrogenSettings/
+15f3ea8 Disable useless alphaslider for battery led customization
+f4ed478 Battery led customization: activate led light preview
+b2e2a5b Color picker: allow to activate ongoing led light as color preview
+
+   * packages/apps/Settings/
+8febdee14a Disable useless alpha slider for notification lights color picker
+b94ee1b2d6 App notification led customization: activate led preview
+a5ec416ce3 SimSettings: Handle NoClassDefFoundError on devices without telephony-ext
+
+   * vendor/nitrogen/
+5e83c72 vendor: add network list overlay
+
+====================
+     02-01-2018
+====================
+
+
+   * device/oneplus/oneplus3/
+9ee3b4a overlay: use stock oxygen auto brightness values
+
+   * frameworks/base/
+69c00c4bddf Add auth framework for outgoing SMS messages.
+019af1c2d19 SystemUI: fix ambient display when HeadsUp disabled
+6ada97dbdf3 CamcorderProfiles: Add new profiles for recorder
+583742f682e Camera: Extend face detection
+12dc5c521b9 base: SystemUI: add drawable tint in tuner lockscreen picker
+238e79ba5da Cleanup unused tiles drawables
+c6e10f74259 SystemUI: use slashify for more qs tile
+097f5e2fc41 Add toggle for face auto unlock (1/2)
+9ba197c3736 1/2] base: Bring back less notification sounds
+270bbb4a03d Fix brightness slider under Settings/Display
+f0dd1d326c7 SystemUI: Hide NFC from statusbar icons if NFC isn't available
+bf3a68d0abc Add Italian translations
+02491e5246a DUI: remove stock navbar drawables
+be19bbdf915 Weather: hide lockscreen weather when dozing
+2a1cafe3e16 Revert "Weather: hide lockscreen weather when dozing"
+fbe092adb5d Ambient ticker: make it work if secure lockscreen notifs are blocked
+6fc8d338f49 Ambient display music ticker [1/2]
+488a96d8c08 Port ambient Now Playing container from Pixel [stripped down version]
+df1cecbb711 pocket: Add hardware acceleration and properly maintain SYSTEM_UI flags
+ec5e2a7cd50 pocket judge: disable by default
+0d15cf5911c PocketService: Adjust light sensor rate to 400ms
+96ab37b9b5a PhoneWindowManager: Block screenshots when pocket lock is showing
+50bafa29672 pocket lock: Remove fingerprint events and gestures disabling it causes random bug with fp unlocking
+dbc046adfbb policy: introduce pocket lock * Block touch screen and keys inputs when device is in pocket. * Safe-door to disable pocket lock within long press power button if sensors do not behave correctly after PocketManager.isDeviceInPocket() returns true. * Window uses TYPE_SYSTEM_ERROR flag with ensure high priority over the lockscreen and other high priority windows. * Do not illuminate buttons when pocket lock is showing. * Disable fingerprint events and gestures when in pocket * Be friendly towards Keypress Boost
+9a88b0917aa pocket: introduce pocket judge * Judge if device is in pocket. * Notify clients callbacks when pocked state changes. * Start listening when device becomes not interactive. * Stop listening when device becomes interactive and is NOT in pocket.
+6509b11e744 Update PL translation
+9da4cc53742 Optimize code of multithread installation
+14958ab7178 Use multithread to verify files contained in APK
+
+   * frameworks/opt/telephony/
+d5777d1ba Telephony: Fix loading of older QTI blobs
+6f5cb4557 Telephony: dont scare AOSP people
+2ba9de97f SimPhoneBook: Add ANR/EMAIL support for USIM phonebook.
+ca19f62c6 MSIM: Fix to set Mcc & Mnc with correct subId
+07a223d3b Telephony: Enable data call on CSIM.
+2efa3aefa MSIM: Use sub id based network mode
+115b2b2eb MSIM: Dummy subId related changes
+d501afe8a MSIM: Changes for dds flex map property control
+ce0f74144 Add support for data+Mms
+a219248b3 Telephony: Send INITIAL_ATTACH only when it is applicable.
+a4798adea Modify access specifiers to enable OMH
+7cb4c74e0 MSIM: Add support for Manual Provisioning
+44d709220 Initial implementation of QtiTelephonyComponentFactory
+f16e45e15 Use subscription info for ImsManager queries.
+f873ca637 Revert "Use Material Light theme for AlertDialog"
+
+   * packages/services/Telephony/
+0ce0e6fa Add TD-SCDMA related network mode options
+88719784 Fix theming
+47446090 Fix multiple apn items issue
+d14bdad6 Telephony: use SettingsLib styles
+
+   * vendor/nitrogen/
+f6c98e8 Give overlays their own priority level
+
