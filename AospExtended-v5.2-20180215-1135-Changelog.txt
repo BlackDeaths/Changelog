@@ -1,0 +1,47 @@
+====================
+     02-15-2018
+====================
+
+   * kernel/huawei/angler/
+2a0f60d  tty fix oops when rmmod 8250  [Pranav Vashi]
+0f4317d  Input: do not emit unneeded EV_SYN when suspending  [Pranav Vashi]
+e9e7429  BACKPORT: netlink: add a start callback for starting a netlink dump  [Pranav Vashi]
+415ab09  UPSTREAM: loop: fix concurrent lo_open/lo_release  [Pranav Vashi]
+3c7c13c  BACKPORT: ipv6: fix udpv6 sendmsg crash caused by too small MTU  [Pranav Vashi]
+
+====================
+     02-14-2018
+====================
+
+
+====================
+     02-13-2018
+====================
+
+   * frameworks/base/
+92fa7dc  Ambient music ticker improvements  [Shubham Singh]
+78809f4  Fix notification sound for some apps if Smart notification sound enabled  [Shubham Singh]
+4f5a0f9  Clock customization: more improvements  [Shubham Singh]
+280041a  Clock code performance improvements  [Shubham Singh]
+9d824c6  Status bar left/right clock customizations [1/2]  [Shubham Singh]
+12ac14d  Revert "fwb: Statusbar clock customizations (1/2)"  [Shubham Singh]
+3df527f  Revert "Make status bar ticker play nice with center clock"  [Shubham Singh]
+   * packages/apps/Extensions/
+46f84a4  Fix Clock date format listpreference  [Shubham Singh]
+40ff5b3  Status bar clock and date customizations [2/2]  [Shubham Singh]
+2d46fb9  Revert " ae: Statusbar clock customization (2/2)"  [Shubham Singh]
+   * packages/apps/Launcher3/
+5485599  Allow to hide or show date and weather  [Shubham Singh]
+3eb8106  Allow to hide the swipe up arrow indicator  [Shubham Singh]
+80fb7fa  Whitelist Google widgets  [Shubham Singh]
+
+====================
+     02-12-2018
+====================
+
+
+====================
+     02-11-2018
+====================
+
+
