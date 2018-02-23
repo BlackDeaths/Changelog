@@ -1,0 +1,35 @@
+====================
+     02-23-2018
+====================
+
+
+====================
+     02-22-2018
+====================
+
+   * hardware/qcom/audio-caf/msm8996/
+627d960  Merge pull request #1 from ygorigor/8.1.x-caf-8996  [GitHub]
+b7c1ada  ssr: Fix building with OSS materials  [Igor Sorocean]
+   * hardware/qcom/media-caf/msm8996/
+769f83d  Merge pull request #1 from ygorigor/8.1.x-caf-8996  [GitHub]
+0babd48  media: libOmxSw encoders require prop headers :(  [Igor Sorocean]
+
+====================
+     02-21-2018
+====================
+
+
+====================
+     02-20-2018
+====================
+
+   * packages/apps/DUI/
+cc68217  Add new Fling logo (#10)  [Shubham Singh]
+
+====================
+     02-19-2018
+====================
+
+   * manifest/
+1cdbe31  Track more stuffs  [Shubham Singh]
+
