@@ -1,0 +1,377 @@
+
+ ▼ Resurrection Remix Oreo Ver 6.0.0 Changelog
+
+
+====================
+     03-01-2018
+====================
+
+
+   * device/huawei/angler/
+2d045d0 angler: stop adding vendor apk's to system
+671ab2d angler: Add Google platform certificate
+
+   * device/samsung/klte-common/
+9d1c38d klte-common: sepolicy: Label sysfs nodes for power HAL
+30d27eb Revert "klte-common: Enable legacy f_adb interface support"
+
+   * device/samsung/msm8974-common/
+da14a8d msm8974-common: libril: Fix RIL_Call struct for 64-bit platforms
+
+   * frameworks/av/
+68902e0 camera/media: Support legacy HALv1 camera in mediaserver
+9c1245e libstagefright: use 64-bit usage for native_window_set_usage
+9bd8b4c media: fix infinite wait at source for HAL1 based recording
+0873ee3 stagefright: ACodec: Resolve empty vendor parameters usage
+0594fec Camera: fix use after disconnect error
+890a1a3 libstagefright: Free buffers on observer died
+fcaf4be CameraService: Fix deadlock in binder death cleanup.
+
+   * system/core/
+cd2a9fc init: I hate safety net
+
+   * vendor/huawei/
+48f7b70 Merge pull request #1 from AICP/o8.1
+
+====================
+     02-28-2018
+====================
+
+
+   * bootable/recovery/
+9472909 recovery: Fix format_volume for f2fs
+dfa53ec recovery: Fix back handling
+
+   * device/samsung/msm8974-common/
+778c310 msm8974-common: sepolicy: Add policy statements for power HAL
+993b723 Revert "Revert "msm8974-common: Use QTI HIDL power HAL""
+
+   * frameworks/base/
+684a22d PackageManager: Add configuration to specify vendor platform signatures
+e2f2d77 SystemUI: add volume tones back
+54949a7 NightDisplayController: report unvailable if livedisplay feature is present
+04866d0 Show 3G data icon for TD-SCDMA network type
+
+   * lineage-sdk/
+4775a77 lineage-sdk: Add vendor platform signature overlay
+
+====================
+     02-27-2018
+====================
+
+
+   * bootable/recovery-twrp/
+90765a2 Languages: Update Turkish translation.
+
+   * frameworks/base/
+62b0dba WindowManager:Disable BACK_DELAYED_PRESS {HACK}
+9c11e6d FWB:Remove redundant kill longpress back app [1/2]
+
+   * hardware/qcom/audio-caf/msm8996/
+63c7f98 msm8996: ultrasound: Initial open source hal for Elliptic Ultrasound
+
+   * packages/apps/Camera2/
+ea94710 Add Storage preference (1/2)
+5bce365 Fix crash if Exif-Tag buffer-length and component-count are both 0
+4835383 Camera2: Fix Undo button behaviour
+a9d03d5 Camera2: Remove google help preference
+42618f8 Camera2: Add option to set max screen brightness
+fb78027 Camera: Powerkey shutter (2/2)
+89d723a Camera: Disable Camera Launcher when both Front and Back sensors are not detected
+ab0f6eb Camera2: Stop using GPS when going to background
+01c509c Camera2: Remove settings preferences only once
+18e3960 Camera2: fix video recording for older drivers
+b19f88a Camera2: Only autofocus before a snap if we are actually in "auto" mode.
+5bfd10f Don't attempt to convert degree to orientation enum twice
+
+   * packages/apps/Settings/
+9f36755 d855: That's all to me. (#912)
+b3a42b3 Updated to maintain titan and thea (#923)
+edab715 Settings: Remove Redundant kill longpress back app [2/2]
+
+   * system/nfc/
+6af832c bcm2079x: fix crash in userial_close_thread()
+951d7f2 bcm2079x: Add checks to prevent NULL pointer deference in gki_init_free_queue()
+e9e8405 bcm2079x: Exit gracefully if there was an error in GKI_wait()
+1e70706 bcm2079x: Replace pthread_exit with return to avoid memory leak
+0e0083c bcm2079x: Log all thread exits
+
+   * vendor/huawei/
+eca97e0 angler: stop adding vendor apk's to system
+
+====================
+     02-26-2018
+====================
+
+
+   * bionic/
+7caf61f bionic: Let popen and system fall back to /sbin/sh
+
+   * bootable/recovery/
+2f2725e recovery: Respect margins in background and foreground screens
+30553e8 recovery: Add missing menu font files
+
+   * build/kati/
+570abd8 Fix findleaves emulator with symlink loops
+
+   * device/huawei/angler/
+dc9ba22 overlay: Disable SystemUI anti-falsing on lockscreen
+
+   * device/rr/sepolicy/
+95d447c Merge remote-tracking branch 'LineageOS/lineage-15.1' into oreo
+c4c96f6 sepolicy: Isolate qcom sysfs_graphics policy for recovery
+
+   * external/DUtils/
+50ded95 DUI: Turn on Expanded Desktop action
+7346d5d DUI: Add Google Sound Search action [2/2]
+
+   * packages/apps/DUI/
+1b76802 Expose moar DUI parts
+2254811 Fix FC for Fling when unpinning an app
+779ea9d DUI: Add Google Sound Search action [1/2]
+
+   * packages/apps/LineageParts/
+b9f0428 Set default accent to Pixel blue
+
+   * packages/apps/Settings/
+041144a Update D852 Maintainer (#922)
+
+====================
+     02-25-2018
+====================
+
+
+   * device/qcom/sepolicy/
+ba87a81 Merge remote-tracking branch 'LineageOS/lineage-15.1' into oreo
+
+   * device/rr/sepolicy/
+2c9cfd4 recovery: Clean up recovery SELinux policy
+37aacd7 Merge remote-tracking branch 'LineageOS/lineage-15.1' into oreo
+d54feea common: Add sf_lcd_density_prop type and labelled props
+
+   * frameworks/base/
+
+   * hardware/qcom/fm/
+
+   * hardware/qcom/media-caf/msm8996/
+3d25618 media: libOmxSw encoders require prop headers :(
+
+   * packages/apps/DUI/
+
+   * packages/apps/Dialer/
+
+   * packages/apps/Eleven/
+
+   * packages/apps/FMRadio/
+
+   * packages/apps/FlipFlap/
+
+   * packages/apps/Gallery2/
+
+   * packages/apps/LockClock/
+
+   * packages/apps/Recorder/
+
+   * packages/apps/ResurrectionOTA/
+cb59d33 ResurrectionOTA: rework automatic updates with JobService
+6781205 ResurrectionOTA: update notifications
+6482d93 ResurrectionOTA: Don't start the intent if there's no browser installed
+01fb805 Disable dexpreopt
+
+   * packages/apps/Settings/
+
+   * packages/apps/Snap/
+
+   * packages/apps/Terminal/
+
+   * packages/apps/UnifiedEmail/
+
+   * packages/services/OmniJaws/
+
+   * system/vold/
+7db856f Add exfat to supported FSs if exfat is enabled
+330a836 Remove unused includes
+c0002e6 Revert "vold: Native NTFS kernel driver support"
+
+   * vendor/rr/
+508e968 Merge branch 'oreo' of https://github.com/ResurrectionRemix/android_vendor_resurrection into HEAD
+cf70304 Don't enable ANDROID_BINDER_IPC_32BIT for mixed userspace/kernel
+b9f0a41 Bump LINEAGE_PLATFORM_SDK_VERSION to 8
+b2ea21e lineage: Unconditionally ship exFAT tools
+
+====================
+     02-24-2018
+====================
+
+   * android/
+3faf10d track own system_sepolicy
+
+   * bootable/recovery/
+f66aeed recovery: Graphical UI
+ff14b68 minui: Skip EV_REL input devices.
+af0276f Allow custom bootloader msg offset in block misc
+7d9e8fa bootloader_message: allow devices to override
+1c1c019 updater: Allow devices to suppress BLKDISCARD
+04dec0f sr: Add performance control
+59f17e7 recovery: init: mount pstore fs
+4d0eb79 minui: accept RGBA and treat it as RGBX
+0965dbe recovery: Enable the menu for User builds
+22a0a99 recovery: Remove "Supported API" message
+b51322b recovery: Fix mounting f2fs partitions
+e3aa5c8 Allow f2fs to reserve bytes for footer when formatting
+f3ce5ac update-binary: support reboot_now on older recoveries
+840bfc9 minui: support to pan display (FBIOPAN_DISPLAY)
+8a6aa6b recovery: Allow devices to reboot to download mode
+a9c227a recovery: autodetect filesystem type
+07b5577 sr: updater: Fix multi-stage docs
+351ff1a sr: Dejank the menus, fix colors
+c9455e3 sr: Fix the progress bar
+5228512 sr: Return to main menu after selection
+856faef recovery: Add wipe system partition option
+eb98fde recovery: Provide caching for sideload files
+9c62b06 recovery: bu: Implement backup/restore
+5dfa5bf recovery: Provide sideload cancellation
+47c5a3b Blank screen during shutdown and reboot
+493baca recovery: Awakening of MiniVold
+969862d sr: Allow device-specific recovery modules
+0e81208 sr: Include vendor init trigger
+298d203 recovery: Add fstools
+
+   * device/qcom/sepolicy/
+7eac191 sepolicy: Remove definition and labelling of sf_lcd_density_prop
+
+   * device/rr/sepolicy/
+5e84bfc sepolicy: Initial policy for recovery
+
+   * device/samsung/klte-common/
+435b4ae klte-common: Update kernel exfat flag
+
+   * external/e2fsprogs/
+9d2fbee Fix build warnings with '__bitwise' macro redefined
+
+   * external/f2fs-tools/
+c1c7fa3 f2fs-tools: Rename utf conversion symbols
+0cc764b f2fs-tools: Rename quota symbols
+975d7bc f2fs-tools: Add static libs for recovery
+
+   * frameworks/base/
+20eaaf0 Recents: Dont tint membar to accent if recents styles are enabled
+808daf1 BatteryService: add turbo power charging support
+66e3eee Themes: Notification tint: add bool to enable algorithm for dark backgrounds
+38bc59b [3/5] fwb: Add support to force use of the black theme instead of the dark
+3be3c91 SystemUI: RecentsView: Use accent color in memory bar
+708d27a base: SystemUI: Mark PIE strings as non translatable (#214)
+
+   * kernel/samsung/msm8974/
+20e8ec6 ANDROID: sdcardfs: Hold i_mutex for i_size_write
+8d82d13 Merge remote-tracking branch 'upstream/lineage-15.1' into lineage-15.1
+0559023 ARM: configs: lineage_*: Enable sdfat
+5f665c2 fs: exfat: Allow disabling exfat
+dc2bb7d fs: sdfat: Allow disabling sdfat
+d7cf1d0 fs: sdfat: Fix compilation without debugging
+46e48d4 fs: sdfat: Fix compilation on Linux 3.4
+2e4005f fs: Add sdfat
+c5c90f8 VFS: Properly free dentry name snapshots in vfs_rename2
+
+   * lineage-sdk/
+e5a981f [1/5] lineage-sdk: Add support to force use of the black theme instead of the dark
+a73dfcc Add White accent
+235ba92 Move accent strings to rr_strings
+
+   * packages/apps/Contacts/
+2cb5e07 Contacts: Enable support for device contact.
+
+   * packages/apps/LineageParts/
+ec9eed5 [2/5] LineageParts: Add support to force use of the black theme instead of the dark
+d518a03 Remove Ok dialog when tapping cancel on automagic dialog
+c2c4181 StylePreferences: Ensure mStyleStatus is changed when style changes
+ef07b98 Add white accent
+1d5546c Jump to homescreen and back on theme change
+
+   * packages/apps/Nfc/
+5981d86 NfcNci: make T3T/Nfc-F HCE optional
+
+   * packages/apps/Settings/
+1547a38 Update Jalebi Maintainer (#921)
+aa90ed8 Use accent color on storage primary
+f61894a ChangelogActivity: Make some strings translatable
+98f65b4 CustomSeekbar: Make default text translatable
+8a078bb About RR: Prevent FC when browser isn't installed
+7abc983 Settings: hide aosp ThemePreferenceController
+db60618 settings: Add a RemotePreference for device-specific doze settings
+4c2ad8d Updated resurrection_device_maintainers_strings.xml (#920)
+
+   * packages/overlays/Resurrection/
+f9951bb [4/5] overlays: Kang and adapt dark theme to black theme
+7814e46 Add white accent theme
+
+   * system/extras/
+d28d5f0 mkf2fsuserimg.sh: support sload_f2fs
+04f0fc8 mkf2fsuserimg.sh: add missing features
+e8357ef f2fs_utils: enable mac build by removing dead codes
+e8b6fe0 Use -Werror in system/extras
+5984d6b extras: remove su
+fc20f73 f2fs_utils: Add a static libf2fs_sparseblock for minvold
+
+   * system/sepolicy/
+c994fac sepolicy: Allow recovery to write to rootfs
+
+   * system/vold/
+3c6ab83 vold: Fix minivold
+
+   * vendor/rr/
+abb09f1 [5/5] vendor: Build black primary themes
+64ae1f6 Build white accent
+2666205 Kill teal color for the default printer service
+
+====================
+     02-23-2018
+====================
+
+
+   * bionic/
+012ed28 linker: allow the linker to shim executables
+
+   * bootable/recovery/
+529971e sr: Enable gunzip/gzip/unzip/zip commands
+afc2dae sr: Puke out an /etc/fstab so stuff like busybox/toybox is happy
+59fbcbd recovery: ui: Support hardware virtual keys
+a0bca1a recovery: ui: Minor cleanup for touch code
+4509d87 recovery: ui: Default to touch enabled
+1538923 sr: Get a proper shell environment in recovery
+
+   * device/huawei/angler/
+b59d962 Drop the default and minimum allowed system brightness settings
+2a1bcdc There is no spoon...
+
+   * device/qcom/sepolicy/
+425a78c sepolicy: Label mpctl_socket as data_file_type
+
+   * device/samsung/klte-common/
+74f7c03 klte-common: Set proper permissions for mDNIe nodes
+
+   * frameworks/base/
+a2673f3 WifiTile: Avoid NPE during boot phase
+e0dc39d SystemUI: Remove trailing whitespace on high_accuracy_description
+a794f4b LocationTile: Improve strings
+5e73386 SystemUI: Advanced location tile
+aab3836 Revert"Location tile enable switching between 3 modes"
+dddc677 SystemUI: disable tuner
+384afa5 PackageParser: Use ExecutorService to parse certs and signatures
+7388a89 Revert "Use multithread to verify files contained in APK"
+1d8d879 Revert "Optimize code of multithread installation"
+d567878 Fix notification sound for some apps if Smart notification sound enabled
+cb70d9c Allow vibration instead of beep for in-call notifications [1/2]
+
+   * hardware/samsung/
+62b70f8 power: Allow POWER_HINT_DISABLE_TOUCH in low power mode
+
+   * lineage-sdk/
+815c1cb sdk: add TILE_LOCATION_DETAIL logging const
+
+   * packages/apps/Nfc/
+42f0214 Keep screen on during detecting some NFC devices
+
+   * packages/apps/Settings/
+5978715  Allow vibration instead of beep for in-call notifications [2/2]
+
