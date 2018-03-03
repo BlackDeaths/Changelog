@@ -1,0 +1,318 @@
+
+ ▼ Resurrection Remix Oreo Ver 6.0.0 Changelog
+
+
+====================
+     03-03-2018
+====================
+
+
+   * device/huawei/angler/
+96f49ac Revert "Enable Battery and Notification LED customization"
+d3867eb Enable Battery and Notification LED customization
+
+   * device/samsung/msm8974-common/
+306c353 msm8974-common: Allow overriding full dex preopt
+
+   * frameworks/av/
+1862e14 Revert "camera: Only link and use vendor.qti.hardware.camera.device on qcom devices"
+216fd5a Merge pull request #1 from Unleash-OS/oreo
+7e39cf6 camera: Only link and use vendor.qti.hardware.camera.device on qcom devices
+1f9e312 Revert "Enable Wifi Display to support 1920*1080 60fps"
+
+   * frameworks/base/
+3f949cd Add kill button to notification guts [1/2]
+614016c frameworks/base lights: Let Lineage lights decide if notification led is on/off
+0c0e745 SystemUI: Use Java range for volume tone tone generator
+
+   * hardware/qcom/power/
+0a5232e msm8952: Fix typo
+
+   * lineage-sdk/
+a190db3 lineage-sdk lights: Let Lineage lights decide if notification led is on/off
+
+   * packages/apps/DUI/
+57423ca Fling kb cursors: long press left/right to keep moving cursor [1/2]
+
+   * packages/apps/ResurrectionOTA/
+
+   * packages/apps/Settings/
+82f869e Fix some seekbar inconsistencies
+4f3ceee Add notification guts kill app button [2/2]
+c3a36f7 Fling kb cursors: long press left/right to keep moving cursor [2/2]
+
+   * vendor/rr/
+f2aef28 Copy changelog to out folder
+9014270 build: Don't create two ota packages
+
+====================
+     03-02-2018
+====================
+
+   * android/
+003fcf0 Merge pull request #115 from RainSnowHan/oreo
+
+   * device/huawei/angler/
+2d045d0 angler: stop adding vendor apk's to system
+671ab2d angler: Add Google platform certificate
+
+   * device/samsung/msm8974-common/
+da14a8d msm8974-common: libril: Fix RIL_Call struct for 64-bit platforms
+
+   * frameworks/av/
+8169e12 Merge pull request #1 from BlackDeaths/oreo
+c772a8c soundtrigger: fill in default extras from dsp
+f68d653 Camera: Add support for preview frame fd
+269d7a2 Camera: Add extensions to CameraClient
+9e9016a libstagefright: encoder must exist when source starting
+f5f1b85 libstagefright: use 64-bit usage for native_window_set_usage
+655e811 media: fix infinite wait at source for HAL1 based recording
+e743b57 stagefright: ACodec: Resolve empty vendor parameters usage
+c2873fd Camera: fix use after disconnect error
+c198e68 libstagefright: Free buffers on observer died
+
+   * hardware/qcom/power/
+70b1f44 msm8952: Use is_interactive_governor
+22dd9f7 msm8952: Clean up formatting
+daff0dd msm8952: Use log/log.h instead of utils/Log.h
+1db0a65 power: Allow devices to override RPM stat nodes
+
+   * system/nfc/
+cc331f6 bcm2079x: fix chip id format strings
+
+   * vendor/huawei/
+48f7b70 Merge pull request #1 from AICP/o8.1
+
+====================
+     03-01-2018
+====================
+
+   * android/
+e489c53 lineage: Unstage msm8916 HALs
+
+   * bootable/recovery/
+9472909 recovery: Fix format_volume for f2fs
+dfa53ec recovery: Fix back handling
+
+   * device/samsung/klte-common/
+9d1c38d klte-common: sepolicy: Label sysfs nodes for power HAL
+30d27eb Revert "klte-common: Enable legacy f_adb interface support"
+
+   * frameworks/av/
+8a0b366 CamcorderProfiles: Add new camcorder profiles
+a81f92c CameraService: Fix deadlock in binder death cleanup.
+
+====================
+     02-28-2018
+====================
+
+
+   * device/samsung/msm8974-common/
+778c310 msm8974-common: sepolicy: Add policy statements for power HAL
+993b723 Revert "Revert "msm8974-common: Use QTI HIDL power HAL""
+
+   * frameworks/base/
+684a22d PackageManager: Add configuration to specify vendor platform signatures
+e2f2d77 SystemUI: add volume tones back
+54949a7 NightDisplayController: report unvailable if livedisplay feature is present
+04866d0 Show 3G data icon for TD-SCDMA network type
+
+   * lineage-sdk/
+4775a77 lineage-sdk: Add vendor platform signature overlay
+
+   * system/nfc/
+6af832c bcm2079x: fix crash in userial_close_thread()
+951d7f2 bcm2079x: Add checks to prevent NULL pointer deference in gki_init_free_queue()
+e9e8405 bcm2079x: Exit gracefully if there was an error in GKI_wait()
+1e70706 bcm2079x: Replace pthread_exit with return to avoid memory leak
+0e0083c bcm2079x: Log all thread exits
+
+====================
+     02-27-2018
+====================
+
+
+   * bionic/
+7caf61f bionic: Let popen and system fall back to /sbin/sh
+
+   * bootable/recovery/
+2f2725e recovery: Respect margins in background and foreground screens
+30553e8 recovery: Add missing menu font files
+
+   * bootable/recovery-twrp/
+90765a2 Languages: Update Turkish translation.
+
+   * frameworks/base/
+62b0dba WindowManager:Disable BACK_DELAYED_PRESS {HACK}
+9c11e6d FWB:Remove redundant kill longpress back app [1/2]
+
+   * hardware/qcom/audio-caf/msm8996/
+63c7f98 msm8996: ultrasound: Initial open source hal for Elliptic Ultrasound
+
+   * packages/apps/Camera2/
+ea94710 Add Storage preference (1/2)
+5bce365 Fix crash if Exif-Tag buffer-length and component-count are both 0
+4835383 Camera2: Fix Undo button behaviour
+a9d03d5 Camera2: Remove google help preference
+42618f8 Camera2: Add option to set max screen brightness
+fb78027 Camera: Powerkey shutter (2/2)
+89d723a Camera: Disable Camera Launcher when both Front and Back sensors are not detected
+ab0f6eb Camera2: Stop using GPS when going to background
+01c509c Camera2: Remove settings preferences only once
+18e3960 Camera2: fix video recording for older drivers
+b19f88a Camera2: Only autofocus before a snap if we are actually in "auto" mode.
+5bfd10f Don't attempt to convert degree to orientation enum twice
+
+   * packages/apps/Settings/
+9f36755 d855: That's all to me. (#912)
+b3a42b3 Updated to maintain titan and thea (#923)
+edab715 Settings: Remove Redundant kill longpress back app [2/2]
+041144a Update D852 Maintainer (#922)
+
+   * vendor/huawei/
+eca97e0 angler: stop adding vendor apk's to system
+
+====================
+     02-26-2018
+====================
+
+
+   * build/kati/
+570abd8 Fix findleaves emulator with symlink loops
+
+   * device/huawei/angler/
+dc9ba22 overlay: Disable SystemUI anti-falsing on lockscreen
+
+   * device/rr/sepolicy/
+95d447c Merge remote-tracking branch 'LineageOS/lineage-15.1' into oreo
+c4c96f6 sepolicy: Isolate qcom sysfs_graphics policy for recovery
+
+   * external/DUtils/
+50ded95 DUI: Turn on Expanded Desktop action
+7346d5d DUI: Add Google Sound Search action [2/2]
+
+   * hardware/qcom/audio-caf/msm8916/
+d17da6e post_proc: Set correct PBE_CONF_APP_ID for msm8916
+4d27ad3 post_proc: Reverse eagle DTS build flag
+7efd0e0 post_proc: Allow msm8916 build libqcompostprocbundle
+ddedc89 policy_hal: fix for MR1 function prototype.
+7859d3e Fix parameters passed to pcm_open to include PCM_MONOTONIC
+e75e9ee HAL: Align error code with HIDL wrapper
+e5ca2df hal: return EINVAL by default for presentation_position
+686c92d hal: configs: effects: update conf & lib paths
+15b7f5c hal: audio-test: Move omx tests mm-audio-internal
+be23550 Fix potential NULL dereference in Visualizer effect
+11b0d06 hal : Fix data initialization and input validation errors
+f599daf post_proc: complete reverb environmental interfaces
+0df39fe hal: Clean up compilation warnings
+8c3349f hal: Fix voice call recording
+6171850 hal: Invert standard build flags
+fe3fb1c Equalizer: Check value size for get preset name
+4892ead hal: dolby: Only set C_KEY if ACDB License is enabled.
+2918a13 hal: Tell Huawei acdb loader which files to load
+8ef7033 audio policy: fix capture indication to sound trigger service.
+92cc7e2 audio policy: fix media volume after ringtone
+391ff1f audiopolicy: Avoid spurious routing in APM::stopSource
+ce771eb audio: Add sound trigger header
+5010e64 hal: Shush some debug logging
+8b8fdda Add more allowed frame counts to be configured
+318d961 audio: msm8916: Squashed audio amp commits
+3db86f3 hal: Support the msm8939-florida-snd-card.
+0a9b63e Check if hardware_info has been updated or not.
+9c44776 hal: Add support for AUDIO_DEVICE_OUT_LINE
+28291bb compress offload: use new sample rate representation.
+7940793 audio: Only allow non-legacy HAL
+
+   * hardware/qcom/display-caf/msm8916/
+71a1a68 hal: Added LOCAL_VENDOR_MODULE to set output path of the binaries
+356622d hwc: Set ioprio for vsync thread
+fdad8a6 Move QCOM HALs to vendor partition
+
+   * hardware/qcom/fm/
+
+   * hardware/qcom/media-caf/msm8916/
+37ee45e hal: Added LOCAL_VENDOR_MODULE to set output path of the binaries
+
+   * packages/apps/DUI/
+1b76802 Expose moar DUI parts
+2254811 Fix FC for Fling when unpinning an app
+779ea9d DUI: Add Google Sound Search action [1/2]
+
+   * packages/apps/Dialer/
+
+   * packages/apps/Eleven/
+
+   * packages/apps/FMRadio/
+
+   * packages/apps/FlipFlap/
+
+   * packages/apps/Gallery2/
+
+   * packages/apps/LineageParts/
+b9f0428 Set default accent to Pixel blue
+
+   * packages/apps/LockClock/
+
+   * packages/apps/Recorder/
+
+   * packages/apps/Snap/
+
+   * packages/apps/Terminal/
+
+   * packages/apps/UnifiedEmail/
+
+   * system/vold/
+7db856f Add exfat to supported FSs if exfat is enabled
+
+====================
+     02-25-2018
+====================
+
+
+   * device/qcom/sepolicy/
+ba87a81 Merge remote-tracking branch 'LineageOS/lineage-15.1' into oreo
+7eac191 sepolicy: Remove definition and labelling of sf_lcd_density_prop
+
+   * device/rr/sepolicy/
+2c9cfd4 recovery: Clean up recovery SELinux policy
+37aacd7 Merge remote-tracking branch 'LineageOS/lineage-15.1' into oreo
+d54feea common: Add sf_lcd_density_prop type and labelled props
+
+   * external/e2fsprogs/
+9d2fbee Fix build warnings with '__bitwise' macro redefined
+
+   * frameworks/base/
+
+   * hardware/qcom/media-caf/msm8996/
+3d25618 media: libOmxSw encoders require prop headers :(
+
+   * packages/apps/DUI/
+
+   * packages/apps/ResurrectionOTA/
+cb59d33 ResurrectionOTA: rework automatic updates with JobService
+6781205 ResurrectionOTA: update notifications
+6482d93 ResurrectionOTA: Don't start the intent if there's no browser installed
+01fb805 Disable dexpreopt
+
+   * packages/apps/Settings/
+
+   * packages/services/OmniJaws/
+
+   * system/extras/
+d28d5f0 mkf2fsuserimg.sh: support sload_f2fs
+04f0fc8 mkf2fsuserimg.sh: add missing features
+e8357ef f2fs_utils: enable mac build by removing dead codes
+e8b6fe0 Use -Werror in system/extras
+5984d6b extras: remove su
+fc20f73 f2fs_utils: Add a static libf2fs_sparseblock for minvold
+
+   * system/vold/
+330a836 Remove unused includes
+c0002e6 Revert "vold: Native NTFS kernel driver support"
+
+   * vendor/rr/
+508e968 Merge branch 'oreo' of https://github.com/ResurrectionRemix/android_vendor_resurrection into HEAD
+cf70304 Don't enable ANDROID_BINDER_IPC_32BIT for mixed userspace/kernel
+b9f0a41 Bump LINEAGE_PLATFORM_SDK_VERSION to 8
+b2ea21e lineage: Unconditionally ship exFAT tools
+
