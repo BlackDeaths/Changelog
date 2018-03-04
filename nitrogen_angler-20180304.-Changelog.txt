@@ -1,0 +1,134 @@
+====================
+     2018-03-04    
+====================
+
+ * device/huawei/angler
+b643439  angler: stop adding vendor apk's to system  [razorloves]
+0e0b034  Revert "Revert "Update Truphone profiles""  [BlackDeath]
+47883f8  Revert "Update Truphone profiles"  [BlackDeath]
+17290fc  Update Truphone profiles  [Tiago]
+7cbbbac  Correctly label data types  [Jeff Vander Stoep]
+
+====================
+     2018-03-03    
+====================
+
+ * frameworks/base
+29e8b44  Revert "Check VintfObject compatibility on boot"  [Christian Oder]
+
+ * vendor/nitrogen
+a2dd12f  Added OTA for mako and shamu  [Nitin1438]
+
+====================
+     2018-03-02    
+====================
+
+ * device/huawei/angler
+f45546a  Revert "Angler : overlay: enable AOD"  [BlackDeath]
+5a146f4  Angler : overlay: enable AOD  [Neo]
+9d97c7c  overlay: Disable SystemUI anti-falsing on lockscreen  [Neo]
+bcf3a0a  angler: update dexpreopt option  [razorloves]
+
+ * vendor/huawei
+48f7b70  Merge pull request #1 from AICP/o8.1  [BlackDeath]
+
+====================
+     2018-03-01    
+====================
+
+ * device/xiaomi/kenzo
+feb7ecd  Revert Allow kernel worker to load firmware https://github.com/nitrogen- */android_device_xiaomi_kenzo/commit/b8384b9ebae64875a6b77f814418825f82b4db9f  [xyyx]
+
+====================
+     2018-02-28    
+====================
+
+ * device/xiaomi/kenzo
+13d0e5c  gps: Update configs from op3  [xyyx]
+
+ * kernel/oneplus/msm8996
+bc2d869  Merge remote-tracking branch 'linux/linux-3.18.y' into o2  [xyyx]
+
+ * vendor/huawei
+eca97e0  angler: stop adding vendor apk's to system  [razorloves]
+
+ * vendor/xiaomi/kenzo
+a79e526  Kenzo: Update GPS to O  [xyyx]
+
+====================
+     2018-02-27    
+====================
+
+ * device/xiaomi/kenzo
+660283a  msm8956-common: Add AID_QCOM_DIAG, AID_RFS, and AID_RFS_SHARED to config.fs  [Ritesh Harjani]
+da7e988  gps: Remove sources Add Gnss HAL and ILocHidlGnss interface Used blobs from suzu dump  [xyyx]
+
+====================
+     2018-02-26    
+====================
+
+ * kernel/oneplus/msm8996
+f8f8e8c  Linux 3.18.96  [Greg Kroah-Hartman]
+cebca80  crypto: s5p-sss - Fix kernel Oops in AES-ECB mode  [Kamil Konieczny]
+428eb67  KVM: async_pf: Fix #DF due to inject "Page not Present" and "Page Ready" exceptions simultaneously  [Wanpeng Li]
+bbd6d08  hippi: Fix a Fix a possible sleep-in-atomic bug in rr_close  [Jia-Ju Bai]
+1265219  xen: XEN_ACPI_PROCESSOR is Dom0-only  [Jan Beulich]
+0a48efd  x86/mm/kmmio: Fix mmiotrace for page unaligned addresses  [Karol Herbst]
+83ccb5c  mm/early_ioremap: Fix boot hang with earlyprintk=efi,keep  [Dave Young]
+657da57  dmaengine: jz4740: disable/unprepare clk if probe fails  [Tobias Jordan]
+ffd7525  xfrm: Fix stack-out-of-bounds with misconfigured transport mode policies.  [Steffen Klassert]
+d129a8e  spi: sun4i: disable clocks in the remove function  [Takuo Koguchi]
+f95b33d  509: fix printing uninitialized stack memory when OID is empty  [Eric Biggers]
+251efed  btrfs: Fix possible off-by-one in btrfs_search_path_in_tree  [Nikolay Borisov]
+ed635d8  net_sched: red: Avoid illegal values  [Nogah Frankel]
+41daf46  net_sched: red: Avoid devision by zero  [Nogah Frankel]
+fd0c7c5  gianfar: fix a flooded alignment reports because of padding issue.  [Zumeng Chen]
+7c7ee20  s390/dasd: prevent prefix I/O error  [Stefan Haberland]
+e352253  powerpc/perf: Fix oops when grouping different pmu events  [Ravi Bangoria]
+9f1761d  scripts/kernel-doc: Don't fail with status != 0 if error encountered with -none  [Will Deacon]
+b31bd42  media: s5k6aa: describe some function parameters  [Mauro Carvalho Chehab]
+3745fa3  perf bench numa: Fixup discontiguous/sparse numa nodes  [Satheesh Rajendran]
+da0baaf  perf top: Fix window dimensions change handling  [Jiri Olsa]
+0edf1fd  ARM: dts: am4372: Correct the interrupts_properties of McASP  [Peter Ujfalusi]
+6c73b9c  ARM: AM33xx: PRM: Remove am33xx_pwrdm_read_prev_pwrst function  [Keerthy]
+1d1862d9  usb: build drivers/usb/common/ when USB_SUPPORT is set  [Randy Dunlap]
+b9d7883  usbip: keep usbip_device sockfd state in sync with tcp_socket  [Shuah Khan]
+fd29080  dn_getsockoptdecnet: move nf_{get/set}sockopt outside sock lock  [Paolo Abeni]
+668c72b  video: fbdev/mmp: add MODULE_LICENSE  [Arnd Bergmann]
+265720b  ASoC: ux500: add MODULE_LICENSE tag  [Arnd Bergmann]
+28eb4b7  selinux: ensure the context is NUL terminated in security_context_to_sid_core()  [Paul Moore]
+e8ee445  Provide a function to create a NUL-terminated string from unterminated data  [David Howells]
+48e014f  net: avoid skb_warn_bad_offload on IS_ERR  [Willem de Bruijn]
+e6c8571  netfilter: xt_RATEEST: acquire xt_rateest_mutex for hash insert  [Cong Wang]
+9532a5d  netfilter: on sockopt() acquire sock lock only in the required scope  [Paolo Abeni]
+3045eb3  netfilter: ipt_CLUSTERIP: fix out-of-bounds accesses in clusterip_tg_check()  [Dmitry Vyukov]
+eaae500  netfilter: x_tables: avoid out-of-bounds reads in xt_request_find_{match|target}  [Eric Dumazet]
+ab24a3d  netfilter: x_tables: fix int overflow in xt_alloc_table_info()  [Dmitry Vyukov]
+e1f5f1c  crypto: x86/twofish-3way - Fix %rbp usage  [Eric Biggers]
+cc86506  selinux: skip bounded transition processing if the policy isn't loaded  [Paul Moore]
+a04a3d1  xfrm: check id proto in validate_tmpl()  [Cong Wang]
+2796fe7  mm,vmscan: Make unregister_shrinker() no-op if register_shrinker() failed.  [Tetsuo Handa]
+2455cf4  media: r820t: fix r820t_write_reg for KASAN  [Arnd Bergmann]
+d619611  ARM: dts: s5pv210: add interrupt-parent for ohci  [Arnd Bergmann]
+6677683  ALSA: seq: Fix racy pool initializations  [Takashi Iwai]
+6a4499b  Btrfs: fix crash due to not cleaning up tree log block's dirty bits  [Liu Bo]
+8fae1c3  Btrfs: fix deadlock in run_delalloc_nocow  [Liu Bo]
+5b7d39a  console/dummy: leave .con_font_get set to NULL  [Nicolas Pitre]
+aacf60b  video: fbdev: atmel_lcdfb: fix display-timings lookup  [Johan Hovold]
+cd3b45b  ext4: correct documentation for grpid mount option  [Ernesto A. Fernández]
+5b2336f  ext4: save error to disk in __ext4_grp_locked_error()  [Zhouyi Zhou]
+45d73fe  drm/radeon: adjust tested variable  [Julia Lawall]
+8e8992a  ALSA: seq: Fix regression by incorrect ioctl_mutex usages  [Takashi Iwai]
+055fdc7  arm: spear13xx: Fix spics gpio controller's warning  [Viresh Kumar]
+67df924  arm: spear13xx: Fix dmas cells  [Viresh Kumar]
+b943222  arm: spear600: Add missing interrupt-parent of rtc  [Viresh Kumar]
+ae0dd9e  s390: fix handling of -1 in set{,fs}[gu]id16 syscalls  [Eugene Syromiatnikov]
+e91e380  PM / devfreq: Propagate error from devfreq_add_device()  [Bjorn Andersson]
+ebda139  IB/mlx4: Fix incorrectly releasing steerable UD QPs when have only ETH ports  [Jack Morgenstein]
+
+ * packages/apps/Settings
+f8bbbc1  Fix square battery view in Battery  [xyyx]
+
+ * vendor/nitrogen
+772ff36  OTA: Add Santoni  [Nikesh001]
+
