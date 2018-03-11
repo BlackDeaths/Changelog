@@ -1,0 +1,79 @@
+====================
+     2018-03-11    
+====================
+
+====================
+     2018-03-10    
+====================
+
+ * device/huawei/angler
+f81bde2  angler: update hw keys overlays for DU implementation  [SpiritCroc]
+d6fca0e  Remove config_telephony_use_own_number_for_voicemail  [Nathan Harold]
+cc75173  Mark files in /vendor as vendor_file_type.  [Tri Vo]
+0b6c475  Don't use the STL in C  *s.  [Dan Albert]
+991ea00  angler: update blobs list format  [razorloves]
+d955b86  Revert "angler: stop adding vendor apk's to system"  [Blackjubel]
+d4290c1  angler: Update fingerprint to 8.1.0 (OPM3.171019.016, Mar 2018)  [doc HD]
+
+====================
+     2018-03-09    
+====================
+
+====================
+     2018-03-08    
+====================
+
+====================
+     2018-03-07    
+====================
+
+ * vendor/huawei
+18d9a0d  Merge pull request #2 from AICP/o8.1  [BlackDeath]
+
+====================
+     2018-03-06    
+====================
+
+ * build/make
+ab51c97  Merge tag 'android-8.1.0_r18' into o2  [xyyx]
+
+ * frameworks/av
+5739ce6  Merge tag 'android-8.1.0_r18' into o2  [xyyx]
+
+ * frameworks/base
+c5eee6d  Merge tag 'android-8.1.0_r18' into o2  [xyyx]
+
+ * hardware/interfaces
+8680439  Merge tag 'android-8.1.0_r18' into o2  [xyyx]
+
+ * kernel/huawei/angler
+8274af6  sctp: make use of pre-calculated len  [Marcelo Ricardo Leitner]
+75f8968  netfilter: xt_RATEEST: acquire xt_rateest_mutex for hash insert  [Cong Wang]
+a99dc2b  netfilter: x_tables: avoid out-of-bounds reads in xt_request_find_{match|target}  [Eric Dumazet]
+3932be5  netfilter: x_tables: fix int overflow in xt_alloc_table_info()  [Dmitry Vyukov]
+0fc07e9  net: avoid skb_warn_bad_offload on IS_ERR  [Willem de Bruijn]
+2b4e937  net_sched: red: Avoid illegal values  [Nogah Frankel]
+b71d0ddf  net_sched: red: Avoid devision by zero  [Nogah Frankel]
+f4db2ee  arm64: Disable unhandled signal log messages by default  [Michael Weiser]
+e408ab3  Merge branch '8.1-upstream' into 8.1  [Pranav Vashi]
+b1c9ebf  Merge branch 'android-msm-angler-3.10-oreo-m3' into 8.1  [Pranav Vashi]
+
+ * packages/apps/Settings
+514656a  Merge tag 'android-8.1.0_r18' into o2  [xyyx]
+
+ * system/bt
+d87d31b  Merge tag 'android-8.1.0_r18' into o2  [xyyx]
+
+ * vendor/huawei
+8803674  Revert "angler: stop adding vendor apk's to system"  [doc HD]
+
+====================
+     2018-03-05    
+====================
+
+ * device/huawei/angler
+807f9e3  Revert "Revert "Revert "Update Truphone profiles"""  [BlackDeath]
+
+ * kernel/oneplus/msm8996
+edcd608  Merge remote-tracking branch 'linux/linux-3.18.y' into o2  [xyyx]
+
