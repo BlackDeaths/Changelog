@@ -1,0 +1,184 @@
+
+ ▼ Resurrection Remix Oreo Ver 6.0.0 Changelog
+
+
+====================
+     03-21-2018
+====================
+
+
+   * bootable/recovery-twrp/
+10533f7 Language: Add version info to copying_log in turkish lang.
+fe2f142 Update Turkish translations.
+
+   * device/qcom/sepolicy/
+0cb4cdb apq8084: kill qca1530 policy
+
+   * device/rr/sepolicy/
+92aa728 qcom: Allow Snap to load additional qcom modules
+4993181 sepolicy: Allow vold to exec sgdisk
+
+   * external/bash/
+a4e7995 bashrc: remove resize and ps alias
+
+   * frameworks/av/
+4824681 camera/media: Support legacy HALv1 camera in mediaserver
+c86a065 libstagefright: use 64-bit usage for native_window_set_usage
+0aabfe1 media: fix infinite wait at source for HAL1 based recording
+f5e2975 stagefright: ACodec: Resolve empty vendor parameters usage
+1c7e8b1 Camera: fix use after disconnect error
+48b02d5 libstagefright: Free buffers on observer died
+9f013bf CameraService: Fix deadlock in binder death cleanup.
+879181d CamcorderProfiles: Add new camcorder profiles
+
+   * kernel/samsung/msm8974/
+7962bbc Merge pull request #4 from fessmm/lineage-15.1
+366870d cpufreq: adding cpu undervolting interface...
+e9e5f2b msm8974pro-sec: Activate additional 27 MHz gpu frequency step (idle freq)
+65461dc msm_adreno_tz: Make GPU use lowest idle frequency when no load
+b10ffb5 fs: sdfat: Update to version 2.0.6-lineage
+9a0e402 fs: sdfat: Fix compilation for 32-bit targets
+
+   * system/core/
+e31db39 init: I hate safety net
+
+   * system/sepolicy/
+4a507ca Adapt add_service uses for TARGET_HAS_LEGACY_CAMERA_HAL1
+145599d Add rules required for TARGET_HAS_LEGACY_CAMERA_HAL1
+
+====================
+     03-20-2018
+====================
+
+
+   * bootable/recovery/
+ea68ce9 add sload.f2fs for recovery format
+ed0546e root: Fix an issue when volume length from fs_mgr is negative.
+8afef8c recovery: format f2fs with encrypt/quota
+312e0e7 Integer overflow observed while formatting volume
+
+   * lineage-sdk/
+af5e355 sdk: ilama API (9)
+
+   * packages/apps/Settings/
+7e73912 Add Samsung Galaxy S6 (zerofltexx) (#936)
+
+   * system/vold/
+edd18db minivold: Use libblkid for readMetadata
+
+   * vendor/extra/
+f1ad9b7 Unconditionally include gapps vendor.mk
+
+   * vendor/rr/
+f134ce0 soong: Add BOARD_USES_QCOM_HARDWARE
+69810c6 soong_config: Add TARGET_HAS_LEGACY_CAMERA_HAL1 variable
+
+====================
+     03-19-2018
+====================
+
+
+   * device/huawei/angler/
+ca57d91 overlay: Fixes for new VoLTE without VT setup
+7b5ec5e TWRP support
+f7c8921 Consider fast charging above 1300mA/h @ 5V for angler
+fda22fb overlay: frameworks: allow gms to access persistent data partition
+
+   * device/samsung/msm8974-common/
+e405ae8 msm8974-common: sepolicy: Allow mediaextractor r_file_perms to fuse:file
+
+   * external/unrar/
+a13960a unrar: Fix compile errors with clang
+
+   * hardware/qcom/power/
+047cb66 power: Allow devices to write their own platform specific bits
+
+   * vendor/extra/
+e3099f2 Copy adb public keys to recovery
+1b3a43a Inject MindTheGapps into some devices
+2bbf39e Blacklist some devices from SDCLANG
+
+   * vendor/huawei/
+0d0d69f Merge pull request #5 from AICP/o8.1
+
+====================
+     03-18-2018
+====================
+
+
+   * hardware/sony/thermanager/
+b38622b thermanager: Ignore unused data variables
+
+====================
+     03-17-2018
+====================
+
+
+   * device/huawei/angler/
+0e1bac3 angler: Add Google platform certificate
+
+   * hardware/qcom/display/
+1aa43a5 msm8974: libexternal should depend on libmedia
+ef4ddf0 msm8974: libgralloc: Fix adding offset to the mapped base address
+
+   * hardware/qcom/fm/
+6ca6a20 libfm_jni: Ignore unused parameters from APIs
+944fa04 libfm_jni: Resolve FM_DEVICE_PATH R/O open flag
+abc6047 libfm_jni: Resolve fread assignment to condition cast
+76d61cf libfm_jni: Remove unused variables
+
+   * packages/apps/Snap/
+9b0c005 Snap: Configure focus ring preview dimensions
+b2ef15e Snap: Add support for focus distance
+4bdfff2 Drop new focus indicator into Camera2.
+
+   * vendor/huawei/
+b53ae14 Revert "Revert "angler: stop adding vendor apk's to system""
+
+====================
+     03-16-2018
+====================
+
+
+   * bootable/recovery-twrp/
+6d9746b Merge "libotautil: Add missed header" into android-8.1
+
+   * frameworks/base/
+
+   * hardware/qcom/audio/default/
+6ec0a5e audio: Make CVD version retrieval nonfatal with ACDB v1
+
+   * hardware/qcom/display/
+86a2c32 msm8974: hwcomposer: Fix regression in hwc_sync
+
+   * lineage-sdk/
+
+   * packages/apps/DUI/
+
+   * packages/apps/LineageParts/
+
+   * packages/apps/ResurrectionOTA/
+
+   * packages/apps/Settings/
+
+   * packages/services/OmniJaws/
+
+====================
+     03-15-2018
+====================
+
+
+   * build/make/
+c37a57b Revert "[TEMP] Disable Script enhancments & fix build"
+
+   * hardware/qcom/audio-caf/msm8952/
+5dd29ee Revert "hal: Fix failure in VtsHalAudioV2_0Target test due to spkr protection"
+
+   * kernel/samsung/msm8974/
+6f18659 Merge pull request #3 from fessmm/lineage-15.1
+b78f3fc4 fs: sdfat: Fix compilation for 32-bit targets
+60f4253 fs: sdfat: Update to version 2.0.6-lineage
+
+   * vendor/rr/
+4abddb0 Add properties for build flash info script
+
