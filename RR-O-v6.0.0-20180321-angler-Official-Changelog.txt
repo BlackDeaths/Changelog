@@ -5,7 +5,7 @@
 ====================
      03-21-2018
 ====================
-
+*aarch64-linux-android-7.2-linaro Test !
 
    * bootable/recovery-twrp/
 10533f7 Language: Add version info to copying_log in turkish lang.
