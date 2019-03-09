@@ -1,0 +1,310 @@
+
+Resurrection Remix Pie Ver 7.0.1 Changelog
+
+
+====================
+     03-09-2019
+====================
+
+   * android/
+d5bf0c8 android-9.0.0_r34
+
+   * device/google/wahoo/
+189a404 fix
+700324f Revert "Only inherit Elmyra for Pixel devices"
+6f78f48 Only inherit Elmyra for Pixel devices
+c3ef486 Disable CustomDoze options that are in system/gesture settings
+ff54b83 Revert "Revert "Enable ambient brightness changer in CustomDoze package""
+b62dff4 Revert "Enable ambient brightness changer in CustomDoze package"
+a26d36d Enable ambient brightness changer in CustomDoze package
+0fce78d Clang 8.0.8
+a2d9ef5 liblight: Fix potential fd leak
+bed9b8a wahoo: Remove device/qcom/common dependency
+59a54b9 Pixel 2/XL: Enable sound trigger
+d3abfb3 Disable ipacfg xml product copy
+771e6c3 IMS Support
+f0744a8 Enable EUICC Sim
+aa9eff2 wahoo: Remove defconfig flag
+1fee41b wahoo: Restrict subsystem ramdumps to eng builds
+b5b6b74 wahoo: Build device tree overlay image
+91b2b2d wahoo: liblight: Add kernel header dep
+a9c8d74 wahoo: Import gpt-utils from msm8998 repo
+63abc38 wahoo: Compile kernel inline
+abcfbfd wahoo: Initial Lineage bringup
+
+   * device/qcom/sepolicy/
+18accf5 Merge branch 'lineage-16.0' of https://github.com/LineageOS/android_device_qcom_sepolicy into pie
+
+   * device/rr/sepolicy/
+9b86399 Merge branch 'lineage-16.0' of https://github.com/LineageOS/android_device_lineage_sepolicy into pie
+
+   * frameworks/base/
+ed0d479 Base: StatusbarItems move nfc switch to the correct xml
+b44fcde Revert "SystemUI: Sort subscriptions in reversed order"
+e04ab7d Show mobile icons with left-to-right in order of slot index
+e1db775 base: SystemUI: Mark PIE strings as non translatable (#214)
+
+   * packages/apps/Settings/
+a8606a7 Settings: improve order in misc tab
+d933537 Settings: remove duplicated cpu info from interface/misc
+a875756 Settings: set max rounded_content_padding to 20
+b53f504 Settings: move Rounded Corner to misc
+d3a6fc0 Update the timestamp used for time zone filtering
+
+   * packages/apps/Updater/
+ea318bd Updater: utils: don't check ROM version
+
+   * packages/services/Telephony/
+c677efc Merge branch 'lineage-16.0' of https://github.com/LineageOS/android_packages_services_Telephony into pie
+
+   * system/sepolicy/
+99321d8 Merge branch 'lineage-16.0' of https://github.com/LineageOS/android_system_sepolicy into pie
+
+   * vendor/rr/
+f8234c6 extract_utils: introduce support for executing blob fixups
+318db81 sensitive_pn: New United Kingdom helplines
+99f97b4 rr: update stats
+ad44b80 RR: Bump version to 7.0.1
+
+====================
+     03-08-2019
+====================
+
+
+   * bionic/
+c4af9b0 Merge tag 'android-9.0.0_r34' into lineage-16.0-android-9.0.0_r34
+
+   * build/make/
+397b135 Merge tag 'android-9.0.0_r34' of https://android.googlesource.com/platform/build into HEAD
+
+   * device/qcom/sepolicy/
+71e1820 sepolicy: Fix video4linux "name" node labeling
+
+   * frameworks/av/
+31cdf5d Merge tag 'android-9.0.0_r34' of https://android.googlesource.com/platform/frameworks/av into HEAD
+
+   * frameworks/base/
+8e86e9b Merge tag 'android-9.0.0_r34' of https://android.googlesource.com/platform/frameworks/base into HEAD
+
+   * frameworks/native/
+705fe63 Merge tag 'android-9.0.0_r34' of https://android.googlesource.com/platform/frameworks/native into HEAD
+
+   * hardware/nxp/nfc/
+81275d3 Merge tag 'android-9.0.0_r34' into lineage-16.0-android-9.0.0_r34
+
+   * kernel/google/marlin/
+ca6f34d Merge aosp tag 'android-9.0.0_r0.64' into lineage-16.0
+
+   * kernel/google/wahoo/
+31c3b16 Merge pull request #2 from MSF-Jarvis/pie-qpr2
+
+   * packages/apps/PackageInstaller/
+8bc1ef8 Merge tag 'android-9.0.0_r34' into lineage-16.0-android-9.0.0_r34
+
+   * packages/apps/Settings/
+b716604 Merge pull request #1054 from darkbeast69/pie
+4708f05 Add tulip to official
+
+   * system/bt/
+ac0161c Merge tag 'android-9.0.0_r34' into lineage-16.0-android-9.0.0_r34
+
+   * system/core/
+a1aff06 Merge tag 'android-9.0.0_r34' of https://android.googlesource.com/platform/system/core into HEAD
+
+   * system/tools/hidl/
+284d76a Merge tag 'android-9.0.0_r34' into lineage-16.0-android-9.0.0_r34
+
+====================
+     03-07-2019
+====================
+
+
+   * packages/services/Telephony/
+fbdc8c9 Stop generating ids in android namespace.
+e696ae2 Fix resource warnings.
+
+   * prebuilts/clang/host/linux-x86/
+958dd8d Update prebuilt Clang to r353983.
+
+   * system/extras/su/
+af63088 su: Add back mistakenly removed code
+
+====================
+     03-06-2019
+====================
+
+
+   * device/google/taimen/
+f472bb8 taimen: update fingerprint PQ2A.190305.002
+
+   * frameworks/base/
+f68c265 Fix current formating on lockscreen for devices, that report directly in Ampere. Shamelessly extracted from:   base: Lockscreen Charging info  (3/3)   by: xyyx <xyyx@mail.ru>
+4cafb8b Merge remote-tracking branch 'rr/pie' into pie
+a8cfff9 Custom Rounded Corner and Padding preferences [1/2]
+
+   * hardware/qcom/display-caf/sdm845/
+3749ad5 display-hals: Expose c2d2.h even if TARGET_DISABLE_DISPLAY is set
+
+   * lineage-sdk/
+
+   * packages/apps/Settings/
+40c23f4 Merge pull request #1053 from tapanrgohil/pie
+7f01ca6 Update Onyx Maintainer
+d764213 Merge remote-tracking branch 'rr/pie' into pie
+d2bbf21 Custom Rounded Corner and Padding preferences [2/2]
+
+   * packages/services/OmniJaws/
+
+   * vendor/pixelgapps/
+528773b Update gapps to March 2019 - Pixel 3XL (crosshatch)
+
+====================
+     03-05-2019
+====================
+
+   * android/
+7680962 manifest: Track our device/google/atv
+
+   * device/google/marlin/
+dc3aac8 Merge pull request #11 from razorloves/16.0-vendorimg
+
+   * frameworks/base/
+7fc8e6a Merge branch 'lineage-16.0' of https://github.com/fgl27/android_frameworks_base into pie
+
+   * kernel/google/wahoo/
+352941c Merge remote-tracking branch 'als/android-msm-wahoo-4.4' into pie-qpr2
+4ce6f34 Revert "UPSTREAM: binder: fix race that allows malicious free of live buffer"
+549e354 Revert "staging: qcacld-3.0: Incorrect usage of QDF_ARRAY_SIZE macro"
+5e6da0f Merge pull request #1 from MSF-Jarvis/pie-qpr2
+cccfd26 Merge tag 'android-9.0.0_r0.65' into android-msm-wahoo-4.4
+
+   * packages/apps/Settings/
+15cff1c Merge branch 'lineage-16.0' of https://github.com/fgl27/Resurrection_packages_apps_Settings into pie
+
+   * vendor/rr/
+bc77f6d Merge branch 'lineage-16.0' of https://github.com/fgl27/android_vendor_resurrection into pie
+
+====================
+     03-04-2019
+====================
+
+
+   * build/make/
+9307df5 Merge branch 'lineage-16.0' of https://github.com/LineageOS/android_build into pie
+
+   * build/soong/
+dd029e7 Merge branch 'lineage-16.0' of https://github.com/LineageOS/android_build_soong into pie
+dc2431f Fix formatting
+
+   * device/qcom/sepolicy/
+cc99b04 sepolicy: Label persist.nfc.hci_network_reset_req
+
+   * frameworks/base/
+19be8e2 Fix build
+53b1129 SystemUI: grant missing READ_PHONE_STATE permission
+2dd6986 SystemUI: OneHandMode QS tile
+110182f base: Add support for DiracSound FX
+59df8c4 [1/2] base: add option to enable AOD on charging only
+71f157f base: SystemUI: add config check for aod available in qs tile
+b45bf5d base: SystemUI: add qs AOD tile
+2e8cdec GlobalActions: avoid multiple power dialog animations
+de62205 VolumeDialog: avoid multiple animations on touch spam
+aea81d7 Telephony: Add DisconnectCause values for clear code
+d5dc397 Return null on failed insert due to permissions
+660339b Fix RouterAdvertisementDaemon thread leakage problem
+93c6068 Fix potential crash when per-procstate cpu times tracking is turned on
+e256542 SystemUI: Change arrow keys to vector images
+5034c3e Crash app on foreground service notification error
+63c0d2aa ServiceRegistry: Don't throw an exception if OEM_LOCK is missing
+9fb542b am: Avoid scheduling service restart twice
+814070d Unbreak ambient display while Heads up is disabled
+1d70d2f NetworkTraffic: fix indicator not hiding on lost connection
+335402f SystemUI: Fix an issue where unlocking the SIM PIN failed
+
+   * packages/apps/Settings/
+4b08008 [2/2] Settings: show AOD on charge setting
+0d6ced6 Merge pull request #1052 from gohilnikhil/pie
+8fca916 Update resurrection_device_maintainers_strings.xml
+
+   * vendor/rr/
+e3c043f Vendor: update CHANGELOG.mkdn and changelog_github.sh for Pie
+
+====================
+     03-03-2019
+====================
+
+   * android/
+7df9925 Fork external/proguard
+7314c19 lineage: Re-enable SDM845 CAF HALs
+
+   * device/qcom/sepolicy/
+bc81cbe Merge branch 'lineage-16.0' of https://github.com/LineageOS/android_device_qcom_sepolicy into pie
+
+   * external/bash/
+a40f251 bash: Silence all build warnings
+
+   * external/openssh/
+729a906 openssh: Silence build warnings
+
+   * external/rsync/
+4a30b87 rsync: Silence build warnings
+
+   * frameworks/base/
+055bc67 Include InCallNotification.ogg in AllAudio.mk file
+3e35515 Add ChargingStarted + InCallNotif to AudioPackage
+
+   * packages/apps/Bluetooth/
+d559f31 Bluetooth: Remove unused string resources
+364b045 Fix generating id in android namespace
+
+   * packages/apps/CellBroadcastReceiver/
+5ae5367 Fix a warning in generating id in android namespace.
+a9c37db Fix resource warnings.
+
+   * packages/apps/Contacts/
+0bdcf0b Contacts: Remove unused boolean resource
+
+   * packages/apps/Email/
+2652d44 Email: Fix generating id in android namespace
+
+   * packages/apps/Messaging/
+036ec29 Messaging: Fix generating id in android namespace
+
+   * packages/apps/PackageInstaller/
+fccc143 PackageInstaller: Fix generating id in android namespace
+
+   * packages/apps/Settings/
+1031313 Merge pull request #1050 from AnierinBliss/pie
+7c8dd25 Update pme maintainer
+
+   * packages/apps/Snap/
+d113513 Snap: Add back original-package in manifest
+
+   * packages/services/Telephony/
+2440bc6 Merge branch 'lineage-16.0' of https://github.com/LineageOS/android_packages_services_Telephony into pie
+
+   * system/extras/
+ccbf905 Remove -Wno-error from system/extras
+
+   * vendor/nxp/opensource/halimpl/
+fb5cc96 halimpl: Remove useless makefile
+
+   * vendor/rr/
+b9323fc extract_utils: template: introduce kang mode
+c127756 extract_utils: template: make --section argument non-positional
+eeae4d0 extract_utils: template: use quotation marks and variable curly braces consistently
+2461a68 extract_utils: make --section match words anywhere in the line
+d273bc0 extract_utils: introduce -k (kang mode) option
+cbb5f71 extract_utils: cleanup variable names and arguments passed to extract() function
+83de2ae extract_utils: be compatible with system-as-root layouts
+6fc54ac extract_utils: drop the "/system/" prefix from prints of blob names
+e223065 libbfqio: Remove vendor variant
+bff959a extract_utils: template: introduce kang mode
+d5d0fea extract_utils: template: make --section argument non-positional
+4931a06 extract_utils: template: use quotation marks and variable curly braces consistently
+5238ba8 extract_utils: make --section match words anywhere in the line
+bec92eb extract_utils: introduce -k (kang mode) option
+c503446 extract_utils: cleanup variable names and arguments passed to extract() function
+78d690d extract_utils: be compatible with system-as-root layouts
+4fe79b1 extract_utils: drop the "/system/" prefix from prints of blob names
+
